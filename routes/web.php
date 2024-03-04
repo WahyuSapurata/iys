@@ -19,6 +19,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'Landing@index')->name('landing');
     Route::get('/landing-detail/{uuid}', 'Landing@detail')->name('landing-detail');
 
+    Route::post('/register', 'RegisterController@store')->name('register');
+
     Route::group(['prefix' => 'login', 'middleware' => ['guest'], 'as' => 'login.'], function () {
         Route::get('/login-akun', 'Auth@show')->name('login-akun');
         Route::post('/login-proses', 'Auth@login_proses')->name('login-proses');
@@ -33,6 +35,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::post('/add-data-event', 'EventController@store')->name('add-data-event');
         Route::post('/update-data-event/{params}', 'EventController@update')->name('update-data-event');
         Route::delete('/delete-data-event/{params}', 'EventController@delete')->name('delete-data-event');
+
+        Route::get('/data-pendaftar', 'Pendaftar@index')->name('data-pendaftar');
+        Route::get('/get-data-pendaftar', 'Pendaftar@get')->name('get-data-pendaftar');
     });
 
     Route::get('/logout', 'Auth@logout')->name('logout');

@@ -260,9 +260,14 @@
                         data: 'link_youtube',
                         className: 'text-center',
                         render: function(data, type, row, meta) {
-                            let html = `
-                                <iframe width="150" height="100" src="https://www.youtube.com/embed/${data}" frameborder="0" allowfullscreen></iframe>
-                            `;
+                            let html;
+                            if (data) {
+                                html = `
+                                    <iframe width="150" height="100" src="https://www.youtube.com/embed/${data}" frameborder="0" allowfullscreen></iframe>
+                                `;
+                            } else {
+                                html = `no data`;
+                            }
                             return html;
                         }
                     }, {

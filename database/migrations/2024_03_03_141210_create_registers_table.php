@@ -13,6 +13,22 @@ return new class extends Migration
     {
         Schema::create('registers', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
+            $table->string('nama');
+            $table->string('email');
+            $table->string('asal');
+            $table->string('jenis_kelamin');
+            $table->string('tanggal_lahir');
+            $table->string('no_telp');
+            $table->string('akun_sosmed');
+            $table->string('profesi');
+            $table->string('instansi');
+            $table->string('motivasi');
+            $table->string('riwayat_penyakit');
+            $table->string('ukuran');
+            $table->string('file_ktp');
+            $table->string('file_cv');
+            $table->string('file_ppt');
             $table->timestamps();
         });
     }

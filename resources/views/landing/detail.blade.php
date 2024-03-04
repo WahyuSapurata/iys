@@ -4,7 +4,7 @@
 
 <head>
     <base href="">
-    <title>{{ config('app.name') }} | Landing</title>
+    <title>{{ config('app.name') }} | {{ $data_event->event }}</title>
     <meta charset="utf-8" />
     <meta name="description"
         content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Blazor, Django, Flask &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
@@ -106,8 +106,8 @@
                                         <!--end::Menu item-->
                                         <!--begin::Toolbar-->
                                         <div class="flex-equal ms-15">
-                                            <a href="{{ route('login.login-akun') }}" class="btn btn-success">Sign
-                                                In</a>
+                                            <button class="btn btn-success" data-bs-toggle="modal"
+                                                data-bs-target="#kt_modal_1">Daftar</button>
                                         </div>
                                         <!--end::Toolbar-->
                                     </div>
@@ -126,16 +126,174 @@
                     <!--begin::Heading-->
                     <div class="text-center mb-5 mb-lg-10 py-10 py-lg-20">
                         <!--begin::Title-->
-                        <h1 class="text-white lh-base fw-bold fs-2x fs-lg-3x mb-15">Build An Outstanding Solutions
-                            <br />with
+                        <h1 class="text-white lh-base fw-bold fs-2x fs-lg-3x mb-15">INDONESIA YOUTH SUMMIT
+                            {{-- <br />with
                             <span
                                 style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
                                 <span id="kt_landing_hero_text">The Best Theme Ever</span>
-                            </span>
+                            </span> --}}
                         </h1>
                         <!--end::Title-->
                         <!--begin::Action-->
-                        <a href="../../demo1/dist/index.html" class="btn btn-primary">Daftar</a>
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#kt_modal_1">Daftar</button>
+                        <div class="modal fade" tabindex="-1" id="kt_modal_1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">Registrasi Data</h3>
+
+                                        <!--begin::Close-->
+                                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+                                            data-bs-dismiss="modal" aria-label="Close">
+                                            <span class="svg-icon svg-icon-1"></span>
+                                        </div>
+                                        <!--end::Close-->
+                                    </div>
+
+                                    <div class="modal-body text-start">
+                                        <form action="{{ route('register') }}" method="POST" class="form-data"
+                                            enctype="multipart/form-data">
+                                            @csrf
+                                            @method('POST')
+                                            <div class="mb-10">
+                                                <label for="nama" class="form-label">Nama</label>
+                                                <input class="form-control" type="text" name="nama"
+                                                    id="nama">
+                                                <small class="text-danger nama_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input class="form-control" type="email" name="email"
+                                                    id="email">
+                                                <small class="text-danger email_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="asal" class="form-label">Asal Kota/Kabupaten</label>
+                                                <input class="form-control" type="text" name="asal"
+                                                    id="asal">
+                                                <small class="text-danger asal_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="asal" class="form-label">Jenis Kelamin</label>
+                                                <select name="jenis_kelamin" class="form-select"
+                                                    data-placeholder="Pilih jenis kelamin">
+                                                    <option></option>
+                                                    <option value="laki-laki">Laki - laki</option>
+                                                    <option value="perempuan">Perempuan</option>
+                                                </select>
+                                                <small class="text-danger asal_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
+                                                <input class="form-control kt_datepicker_1" type="text"
+                                                    name="tanggal_lahir" id="tanggal_lahir">
+                                                <small class="text-danger tanggal_lahir_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="no_telp" class="form-label">No Telp</label>
+                                                <input class="form-control" type="text" name="no_telp"
+                                                    id="no_telp">
+                                                <small class="text-danger no_telp_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="akun_sosmed" class="form-label">Akun Sosmed</label>
+                                                <input class="form-control" type="text" name="akun_sosmed"
+                                                    id="akun_sosmed">
+                                                <small class="text-danger akun_sosmed_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="profesi" class="form-label">Profesi</label>
+                                                <input class="form-control" type="text" name="profesi"
+                                                    id="profesi">
+                                                <small class="text-danger profesi_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="instansi" class="form-label">Instansi</label>
+                                                <input class="form-control" type="text" name="instansi"
+                                                    id="instansi">
+                                                <small class="text-danger instansi_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="motivasi" class="form-label">Motivasi</label>
+                                                <textarea id="motivasi" name="motivasi" class="form-control" data-kt-autosize="true"></textarea>
+                                                <small class="text-danger motivasi_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="riwayat_penyakit" class="form-label">Riwayat
+                                                    Penyakit</label>
+                                                <input class="form-control" type="text" name="riwayat_penyakit"
+                                                    id="riwayat_penyakit">
+                                                <small class="text-danger riwayat_penyakit_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="ukuran" class="form-label">⁠Ukuran T-Shirt
+                                                    (S-M-L-XL)</label>
+                                                <select name="ukuran" class="form-select"
+                                                    data-placeholder="Pilih jenis ukuran">
+                                                    <option></option>
+                                                    <option value="s">S</option>
+                                                    <option value="m">M</option>
+                                                    <option value="l">L</option>
+                                                    <option value="xl">XL</option>
+                                                </select>
+                                                <small class="text-danger ukuran_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="file_ktp" class="form-label">KTP <span
+                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
+                                                        bentuk file pdf)</span></label>
+                                                <input class="form-control" accept=".pdf" type="file"
+                                                    name="file_ktp" id="file_ktp">
+                                                <small class="text-danger file_ktp_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="file_cv" class="form-label">CV <span
+                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
+                                                        bentuk file pdf)</span></label>
+                                                <input class="form-control" accept=".pdf" type="file"
+                                                    name="file_cv" id="file_cv">
+                                                <small class="text-danger file_cv_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="file_ppt" class="form-label">Desk
+                                                    (PowerPoint)</label>
+                                                <input class="form-control" accept=".pptx, .ppt" type="file"
+                                                    name="file_ppt" id="file_ppt">
+                                                <small class="text-danger file_ppt_error"></small>
+                                            </div>
+
+
+                                            <div class="separator separator-dashed mt-8 mb-5"></div>
+                                            <div class="d-flex gap-5">
+                                                <button type="submit"
+                                                    class="btn btn-primary btn-sm btn-submit-import d-flex align-items-center"><i
+                                                        class="bi bi-file-earmark-diff"></i> Simpan</button>
+                                                <button type="reset" data-bs-dismiss="modal"
+                                                    class="btn mr-2 btn-light btn-sm d-flex align-items-center"
+                                                    style="background-color: #ea443e65; color: #EA443E"><i
+                                                        class="bi bi-trash-fill"
+                                                        style="color: #EA443E"></i>Batal</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!--end::Action-->
                     </div>
                     <!--end::Heading-->
@@ -285,6 +443,23 @@
                     <!--end::Col-->
                 </div>
                 <!--end::Row-->
+                <!--begin::Product slider-->
+                <div class="tns tns-default">
+                    <!--begin::Slider-->
+                    <!--begin::Item-->
+                    <div class="text-center mb-15 px-5 pt-5 pt-lg-10 px-lg-10">
+                        @if ($data_event->link_youtube)
+                            <iframe class="card-rounded shadow" width="550" height="400"
+                                src="https://www.youtube.com/embed/{{ $data_event->link_youtube }}" frameborder="0"
+                                allowfullscreen></iframe>
+                        @else
+                            <img src="{{ asset('no_image.jpg') }}" class="card-rounded shadow mw-100"
+                                alt="" />
+                        @endif
+                        <!--end::Item-->
+                    </div>
+                </div>
+                <!--end::Product slider-->
             </div>
             <!--end::Container-->
         </div>
@@ -489,9 +664,9 @@
                     </div>
                     <!--end::Content-->
                     <!--begin::Link-->
-                    <a href="https://1.envato.market/EA4JP"
+                    <button data-bs-toggle="modal" data-bs-target="#kt_modal_1"
                         class="btn btn-lg btn-outline border-2 btn-outline-white flex-shrink-0 my-2">
-                        Daftar</a>
+                        Daftar</button>
                     <!--end::Link-->
                 </div>
                 <!--end::Highlight-->
@@ -514,10 +689,19 @@
             <div class="landing-dark-bg pt-20">
                 <!--begin::Container-->
                 <div class="container">
+                    <!--begin::Heading-->
+                    <div class="text-center mb-5">
+                        <!--begin::Title-->
+                        <h3 class="fs-2hx text-white mt-10" id="clients"
+                            data-kt-scroll-offset="{default: 125, lg: 150}">
+                            VENUE</h3>
+                        <!--end::Title-->
+                    </div>
+                    <!--end::Heading-->
                     <!--begin::Row-->
-                    <div class="row py-10 py-lg-20">
+                    <div class="row py-5 py-lg-10">
                         <!--begin::Col-->
-                        <div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
+                        <div class="col-lg-12 mb-10 mb-lg-0">
                             <!--begin::Block-->
                             <div class="rounded landing-dark-border p-9 mb-10 embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item"
@@ -558,57 +742,28 @@
                             }
                         </style>
                         <!--end::Col-->
-                        <!--begin::Col-->
-                        <div class="col-lg-6 ps-lg-16">
-                            <!--begin::Navs-->
-                            <div class="d-flex justify-content-center">
-                                <!--begin::Links-->
-                                <div class="d-flex fw-semibold flex-column me-20">
-                                    <!--begin::Subtitle-->
-                                    <h4 class="fw-bold text-gray-400 mb-6">Contatc</h4>
-                                    <!--end::Subtitle-->
-                                    <!--begin::Link-->
-                                    <a href="https://www.instagram.com/keenthemes" class="mb-6">
-                                        <img src="{{ asset('admin/assets/media/svg/brand-logos/ebay.svg') }}"
-                                            class="h-20px me-2" alt="" />
-                                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
-                                            -</span>
-                                    </a>
-                                    <!--end::Link-->
-                                    <!--begin::Link-->
-                                    <a href="https://www.instagram.com/keenthemes" class="mb-6">
-                                        <img src="{{ asset('admin/assets/media/svg/brand-logos/instagram-2-1.svg') }}"
-                                            class="h-20px me-2" alt="" />
-                                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
-                                            @indonesiayouthsummit</span>
-                                    </a>
-                                    <!--end::Link-->
-                                </div>
-                                <!--end::Links-->
-                                <!--begin::Links-->
-                                <div class="d-flex fw-semibold flex-column ms-lg-20">
-                                    <!--begin::Subtitle-->
-                                    <h4 class="fw-bold text-gray-400 mb-6">Helps</h4>
-                                    <!--end::Subtitle-->
-                                    <!--begin::Link-->
-                                    <a href="https://www.facebook.com/keenthemes" class="mb-6">
-                                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Help
-                                            Center</span>
-                                    </a>
-                                    <!--end::Link-->
-                                    <!--begin::Link-->
-                                    <a href="https://github.com/KeenthemesHub" class="mb-6">
-                                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</span>
-                                    </a>
-                                    <!--end::Link-->
-                                </div>
-                                <!--end::Links-->
-                            </div>
-                            <!--end::Navs-->
-                        </div>
-                        <!--end::Col-->
                     </div>
                     <!--end::Row-->
+                    <!--begin::Heading-->
+                    <div class="text-center d-flex justify-content-center mb-17"
+                        style="align-items: center; gap: 20px">
+                        <!--begin::Title-->
+                        <svg id="svg_maps" class="mb-5" height="3em" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <style>
+                                #svg_maps {
+                                    fill: #dd3b1e
+                                }
+                            </style>
+                            <path
+                                d="M320 64A64 64 0 1 0 192 64a64 64 0 1 0 128 0zm-96 96c-35.3 0-64 28.7-64 64v48c0 17.7 14.3 32 32 32h1.8l11.1 99.5c1.8 16.2 15.5 28.5 31.8 28.5h38.7c16.3 0 30-12.3 31.8-28.5L318.2 304H320c17.7 0 32-14.3 32-32V224c0-35.3-28.7-64-64-64H224zM132.3 394.2c13-2.4 21.7-14.9 19.3-27.9s-14.9-21.7-27.9-19.3c-32.4 5.9-60.9 14.2-82 24.8c-10.5 5.3-20.3 11.7-27.8 19.6C6.4 399.5 0 410.5 0 424c0 21.4 15.5 36.1 29.1 45c14.7 9.6 34.3 17.3 56.4 23.4C130.2 504.7 190.4 512 256 512s125.8-7.3 170.4-19.6c22.1-6.1 41.8-13.8 56.4-23.4c13.7-8.9 29.1-23.6 29.1-45c0-13.5-6.4-24.5-14-32.6c-7.5-7.9-17.3-14.3-27.8-19.6c-21-10.6-49.5-18.9-82-24.8c-13-2.4-25.5 6.3-27.9 19.3s6.3 25.5 19.3 27.9c30.2 5.5 53.7 12.8 69 20.5c3.2 1.6 5.8 3.1 7.9 4.5c3.6 2.4 3.6 7.2 0 9.6c-8.8 5.7-23.1 11.8-43 17.3C374.3 457 318.5 464 256 464s-118.3-7-157.7-17.9c-19.9-5.5-34.2-11.6-43-17.3c-3.6-2.4-3.6-7.2 0-9.6c2.1-1.4 4.8-2.9 7.9-4.5c15.3-7.7 38.8-14.9 69-20.5z" />
+                        </svg>
+                        <h3 class="fs-2hx text-white mb-5" id="clients"
+                            data-kt-scroll-offset="{default: 125, lg: 150}">
+                            Balai Kota Makassar</h3>
+                        <!--end::Title-->
+                    </div>
+                    <!--end::Heading-->
                 </div>
                 <!--end::Container-->
                 <!--begin::Separator-->
@@ -632,6 +787,51 @@
                             <!--end::Logo image-->
                         </div>
                         <!--end::Copyright-->
+                        <!--begin::Navs-->
+                        <div class="d-flex justify-content-center">
+                            <!--begin::Links-->
+                            <div class="d-flex fw-semibold flex-column me-20">
+                                <!--begin::Subtitle-->
+                                <h4 class="fw-bold text-gray-400 mb-6">Contatc</h4>
+                                <!--end::Subtitle-->
+                                <!--begin::Link-->
+                                <a href="https://www.instagram.com/keenthemes" class="mb-6">
+                                    <img src="{{ asset('admin/assets/media/svg/brand-logos/ebay.svg') }}"
+                                        class="h-20px me-2" alt="" />
+                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
+                                        -</span>
+                                </a>
+                                <!--end::Link-->
+                                <!--begin::Link-->
+                                <a href="https://www.instagram.com/keenthemes" class="mb-6">
+                                    <img src="{{ asset('admin/assets/media/svg/brand-logos/instagram-2-1.svg') }}"
+                                        class="h-20px me-2" alt="" />
+                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
+                                        @indonesiayouthsummit</span>
+                                </a>
+                                <!--end::Link-->
+                            </div>
+                            <!--end::Links-->
+                            <!--begin::Links-->
+                            <div class="d-flex fw-semibold flex-column ms-lg-20">
+                                <!--begin::Subtitle-->
+                                <h4 class="fw-bold text-gray-400 mb-6">Helps</h4>
+                                <!--end::Subtitle-->
+                                <!--begin::Link-->
+                                <a href="https://www.facebook.com/keenthemes" class="mb-6">
+                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Help
+                                        Center</span>
+                                </a>
+                                <!--end::Link-->
+                                <!--begin::Link-->
+                                <a href="https://github.com/KeenthemesHub" class="mb-6">
+                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</span>
+                                </a>
+                                <!--end::Link-->
+                            </div>
+                            <!--end::Links-->
+                        </div>
+                        <!--end::Navs-->
                     </div>
                     <!--end::Wrapper-->
                 </div>
@@ -691,6 +891,22 @@
     <script src="{{ asset('admin/assets/js/custom/pages/pricing/general.js') }}"></script>
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
+    <script>
+        $(".kt_datepicker_1").flatpickr({
+            dateFormat: "d-m-Y",
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+            @if (Session::has('status'))
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Mantap',
+                    text: @json(Session::get('message')),
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+            @endif
+        });
+    </script>
 </body>
 <!--end::Body-->
 

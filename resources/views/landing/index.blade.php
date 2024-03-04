@@ -106,8 +106,8 @@
                                         <!--end::Menu item-->
                                         <!--begin::Toolbar-->
                                         <div class="flex-equal ms-15">
-                                            <a href="{{ route('login.login-akun') }}" class="btn btn-success">Sign
-                                                In</a>
+                                            <button class="btn btn-success" data-bs-toggle="modal"
+                                                data-bs-target="#kt_modal_1">Daftar</button>
                                         </div>
                                         <!--end::Toolbar-->
                                     </div>
@@ -152,31 +152,131 @@
                                     </div>
 
                                     <div class="modal-body text-start">
-                                        <form class="form-data" enctype="multipart/form-data">
-
-                                            <input type="hidden" name="id">
-                                            <input type="hidden" name="uuid">
-
+                                        <form action="{{ route('register') }}" method="POST" class="form-data"
+                                            enctype="multipart/form-data">
+                                            @csrf
+                                            @method('POST')
                                             <div class="mb-10">
-                                                <label for="file_excel" class="form-label">KTP</label>
-                                                <input class="form-control" accept=".xlsx, .csv" type="file"
-                                                    name="file_excel" id="file_excel">
-                                                <small class="text-danger file_excel_error"></small>
+                                                <label for="nama" class="form-label">Nama</label>
+                                                <input class="form-control" type="text" name="nama"
+                                                    id="nama">
+                                                <small class="text-danger nama_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="file_excel" class="form-label">CV</label>
-                                                <input class="form-control" accept=".xlsx, .csv" type="file"
-                                                    name="file_excel" id="file_excel">
-                                                <small class="text-danger file_excel_error"></small>
+                                                <label for="email" class="form-label">Email</label>
+                                                <input class="form-control" type="email" name="email"
+                                                    id="email">
+                                                <small class="text-danger email_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="file_excel" class="form-label">Desk (PowerPoint)</label>
-                                                <input class="form-control" accept=".xlsx, .csv" type="file"
-                                                    name="file_excel" id="file_excel">
-                                                <small class="text-danger file_excel_error"></small>
+                                                <label for="asal" class="form-label">Asal Kota/Kabupaten</label>
+                                                <input class="form-control" type="text" name="asal"
+                                                    id="asal">
+                                                <small class="text-danger asal_error"></small>
                                             </div>
+
+                                            <div class="mb-10">
+                                                <label for="asal" class="form-label">Jenis Kelamin</label>
+                                                <select name="jenis_kelamin" class="form-select"
+                                                    data-placeholder="Pilih jenis kelamin">
+                                                    <option></option>
+                                                    <option value="laki-laki">Laki - laki</option>
+                                                    <option value="perempuan">Perempuan</option>
+                                                </select>
+                                                <small class="text-danger asal_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
+                                                <input class="form-control kt_datepicker_1" type="text"
+                                                    name="tanggal_lahir" id="tanggal_lahir">
+                                                <small class="text-danger tanggal_lahir_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="no_telp" class="form-label">No Telp</label>
+                                                <input class="form-control" type="text" name="no_telp"
+                                                    id="no_telp">
+                                                <small class="text-danger no_telp_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="akun_sosmed" class="form-label">Akun Sosmed</label>
+                                                <input class="form-control" type="text" name="akun_sosmed"
+                                                    id="akun_sosmed">
+                                                <small class="text-danger akun_sosmed_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="profesi" class="form-label">Profesi</label>
+                                                <input class="form-control" type="text" name="profesi"
+                                                    id="profesi">
+                                                <small class="text-danger profesi_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="instansi" class="form-label">Instansi</label>
+                                                <input class="form-control" type="text" name="instansi"
+                                                    id="instansi">
+                                                <small class="text-danger instansi_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="motivasi" class="form-label">Motivasi</label>
+                                                <textarea id="motivasi" name="motivasi" class="form-control" data-kt-autosize="true"></textarea>
+                                                <small class="text-danger motivasi_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="riwayat_penyakit" class="form-label">Riwayat
+                                                    Penyakit</label>
+                                                <input class="form-control" type="text" name="riwayat_penyakit"
+                                                    id="riwayat_penyakit">
+                                                <small class="text-danger riwayat_penyakit_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="ukuran" class="form-label">⁠Ukuran T-Shirt
+                                                    (S-M-L-XL)</label>
+                                                <select name="ukuran" class="form-select"
+                                                    data-placeholder="Pilih jenis ukuran">
+                                                    <option></option>
+                                                    <option value="s">S</option>
+                                                    <option value="m">M</option>
+                                                    <option value="l">L</option>
+                                                    <option value="xl">XL</option>
+                                                </select>
+                                                <small class="text-danger ukuran_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="file_ktp" class="form-label">KTP <span
+                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
+                                                        bentuk file pdf)</span></label>
+                                                <input class="form-control" accept=".pdf" type="file"
+                                                    name="file_ktp" id="file_ktp">
+                                                <small class="text-danger file_ktp_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="file_cv" class="form-label">CV <span
+                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
+                                                        bentuk file pdf)</span></label>
+                                                <input class="form-control" accept=".pdf" type="file"
+                                                    name="file_cv" id="file_cv">
+                                                <small class="text-danger file_cv_error"></small>
+                                            </div>
+
+                                            <div class="mb-10">
+                                                <label for="file_ppt" class="form-label">Desk
+                                                    (PowerPoint)</label>
+                                                <input class="form-control" accept=".pptx, .ppt" type="file"
+                                                    name="file_ppt" id="file_ppt">
+                                                <small class="text-danger file_ppt_error"></small>
+                                            </div>
+
 
                                             <div class="separator separator-dashed mt-8 mb-5"></div>
                                             <div class="d-flex gap-5">
@@ -1205,8 +1305,8 @@
                                                     </span>
                                                     <!--end::Svg Icon-->
                                                     <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Arranging
-                                                        Of Indonesian Youth Voices</span>
+                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Sidang
+                                                        Pemuda</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
@@ -1243,45 +1343,27 @@
                                                     </span>
                                                     <!--end::Svg Icon-->
                                                     <span
+                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Social
+                                                        Night</span>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex gap-4 mb-5">
+                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect opacity="0.3" x="2" y="2" width="20"
+                                                                height="20" rx="10" fill="currentColor" />
+                                                            <path
+                                                                d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                    </span>
+                                                    <!--end::Svg Icon-->
+                                                    <span
                                                         class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Treasure
                                                         Hunt</span>
-                                                </div>
-                                                <!--end::Item-->
-                                                <!--begin::Item-->
-                                                <div class="d-flex gap-4 mb-5">
-                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
-                                                        <svg width="24" height="24" viewBox="0 0 24 24"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <rect opacity="0.3" x="2" y="2" width="20"
-                                                                height="20" rx="10" fill="currentColor" />
-                                                            <path
-                                                                d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z"
-                                                                fill="currentColor" />
-                                                        </svg>
-                                                    </span>
-                                                    <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Cultural
-                                                        Night & Bonfire</span>
-                                                </div>
-                                                <!--end::Item-->
-                                                <!--begin::Item-->
-                                                <div class="d-flex gap-4 mb-5">
-                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
-                                                        <svg width="24" height="24" viewBox="0 0 24 24"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <rect opacity="0.3" x="2" y="2" width="20"
-                                                                height="20" rx="10" fill="currentColor" />
-                                                            <path
-                                                                d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z"
-                                                                fill="currentColor" />
-                                                        </svg>
-                                                    </span>
-                                                    <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Awarding</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
@@ -1317,7 +1399,8 @@
                                             <!--begin::Heading-->
                                             <div class="mb-7 text-center">
                                                 <!--begin::Title-->
-                                                <h1 class="text-white mb-5 fw-boldest">Kriteria Peserta</h1>
+                                                <h1 class="text-white mb-5 fw-boldest">Syarat dan Ketentuan Peserta
+                                                </h1>
                                                 <!--end::Title-->
                                             </div>
                                             <!--end::Heading-->
@@ -1376,9 +1459,48 @@
                                                     </span>
                                                     <!--end::Svg Icon-->
                                                     <span
+                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Melampirkan
+                                                        CV</span>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex gap-4 mb-5">
+                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect opacity="0.3" x="2" y="2" width="20"
+                                                                height="20" rx="10" fill="currentColor" />
+                                                            <path
+                                                                d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                    </span>
+                                                    <!--end::Svg Icon-->
+                                                    <span
+                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Melampirkan
+                                                        Desk (PowerPoint) rekomendasi kebijakan awal, yang sesuai dengan
+                                                        ketentuan yang ditetapkan pada guidebook</span>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex gap-4 mb-5">
+                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect opacity="0.3" x="2" y="2" width="20"
+                                                                height="20" rx="10" fill="currentColor" />
+                                                            <path
+                                                                d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                    </span>
+                                                    <!--end::Svg Icon-->
+                                                    <span
                                                         class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Memiliki
-                                                        pengetahuan yang cukup tentang agenda pembangunan daerah asal
-                                                        masingmasing</span>
+                                                        pengetahuan yang cukup tentang agenda Pembangunan daerah asal
+                                                        masing-masing</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
@@ -1398,8 +1520,7 @@
                                                     <span
                                                         class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Memiliki
                                                         ide/gagasan yang inovatif untuk agenda pembangunan nasional
-                                                        menuju Visi
-                                                        Indonesia Emas 2045</span>
+                                                        menuju Indonesia Emas 2045</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
@@ -1437,9 +1558,8 @@
                                                     <!--end::Svg Icon-->
                                                     <span
                                                         class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Bersedia
-                                                        menghadiri kegiatan Indonesian Youth Summit 2024 secara offline
-                                                        yang akan
-                                                        dilaksanakan di Kota Makassar</span>
+                                                        menghadiri kegiatan Indonesia Youth Summit 2024 secara offline
+                                                        di Kota Makassar</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
@@ -1458,8 +1578,8 @@
                                                     <!--end::Svg Icon-->
                                                     <span
                                                         class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Berkomitmen
-                                                        untuk aktif terlibat dalam penyusunan ’Suara Pemuda Indonesia’
-                                                        (Deklarasi)</span>
+                                                        untuk aktif terlibat dalam penyusunan ’Suara Pemuda
+                                                        Indonesia’</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
@@ -1479,6 +1599,25 @@
                                                     <span
                                                         class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Sehat
                                                         jasmani dan rohani</span>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex gap-4 mb-5">
+                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect opacity="0.3" x="2" y="2" width="20"
+                                                                height="20" rx="10" fill="currentColor" />
+                                                            <path
+                                                                d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                    </span>
+                                                    <!--end::Svg Icon-->
+                                                    <span
+                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Pendaftaran
+                                                        tidak dipungut biaya</span>
                                                 </div>
                                                 <!--end::Item-->
                                             </div>
@@ -1714,9 +1853,9 @@
                     </div>
                     <!--end::Content-->
                     <!--begin::Link-->
-                    <a href="https://1.envato.market/EA4JP"
+                    <button data-bs-toggle="modal" data-bs-target="#kt_modal_1"
                         class="btn btn-lg btn-outline border-2 btn-outline-white flex-shrink-0 my-2">
-                        Daftar</a>
+                        Daftar</button>
                     <!--end::Link-->
                 </div>
                 <!--end::Highlight-->
@@ -1739,10 +1878,19 @@
             <div class="landing-dark-bg pt-20">
                 <!--begin::Container-->
                 <div class="container">
+                    <!--begin::Heading-->
+                    <div class="text-center mb-5">
+                        <!--begin::Title-->
+                        <h3 class="fs-2hx text-white mt-10" id="clients"
+                            data-kt-scroll-offset="{default: 125, lg: 150}">
+                            VENUE</h3>
+                        <!--end::Title-->
+                    </div>
+                    <!--end::Heading-->
                     <!--begin::Row-->
-                    <div class="row py-10 py-lg-20">
+                    <div class="row py-5 py-lg-10">
                         <!--begin::Col-->
-                        <div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
+                        <div class="col-lg-12 mb-10 mb-lg-0">
                             <!--begin::Block-->
                             <div class="rounded landing-dark-border p-9 mb-10 embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item"
@@ -1783,57 +1931,28 @@
                             }
                         </style>
                         <!--end::Col-->
-                        <!--begin::Col-->
-                        <div class="col-lg-6 ps-lg-16">
-                            <!--begin::Navs-->
-                            <div class="d-flex justify-content-center">
-                                <!--begin::Links-->
-                                <div class="d-flex fw-semibold flex-column me-20">
-                                    <!--begin::Subtitle-->
-                                    <h4 class="fw-bold text-gray-400 mb-6">Contatc</h4>
-                                    <!--end::Subtitle-->
-                                    <!--begin::Link-->
-                                    <a href="https://www.instagram.com/keenthemes" class="mb-6">
-                                        <img src="admin/assets/media/svg/brand-logos/ebay.svg" class="h-20px me-2"
-                                            alt="" />
-                                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
-                                            -</span>
-                                    </a>
-                                    <!--end::Link-->
-                                    <!--begin::Link-->
-                                    <a href="https://www.instagram.com/keenthemes" class="mb-6">
-                                        <img src="admin/assets/media/svg/brand-logos/instagram-2-1.svg"
-                                            class="h-20px me-2" alt="" />
-                                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
-                                            @indonesiayouthsummit</span>
-                                    </a>
-                                    <!--end::Link-->
-                                </div>
-                                <!--end::Links-->
-                                <!--begin::Links-->
-                                <div class="d-flex fw-semibold flex-column ms-lg-20">
-                                    <!--begin::Subtitle-->
-                                    <h4 class="fw-bold text-gray-400 mb-6">Helps</h4>
-                                    <!--end::Subtitle-->
-                                    <!--begin::Link-->
-                                    <a href="https://www.facebook.com/keenthemes" class="mb-6">
-                                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Help
-                                            Center</span>
-                                    </a>
-                                    <!--end::Link-->
-                                    <!--begin::Link-->
-                                    <a href="https://github.com/KeenthemesHub" class="mb-6">
-                                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</span>
-                                    </a>
-                                    <!--end::Link-->
-                                </div>
-                                <!--end::Links-->
-                            </div>
-                            <!--end::Navs-->
-                        </div>
-                        <!--end::Col-->
                     </div>
                     <!--end::Row-->
+                    <!--begin::Heading-->
+                    <div class="text-center d-flex justify-content-center mb-17"
+                        style="align-items: center; gap: 20px">
+                        <!--begin::Title-->
+                        <svg id="svg_maps" class="mb-5" height="3em" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <style>
+                                #svg_maps {
+                                    fill: #dd3b1e
+                                }
+                            </style>
+                            <path
+                                d="M320 64A64 64 0 1 0 192 64a64 64 0 1 0 128 0zm-96 96c-35.3 0-64 28.7-64 64v48c0 17.7 14.3 32 32 32h1.8l11.1 99.5c1.8 16.2 15.5 28.5 31.8 28.5h38.7c16.3 0 30-12.3 31.8-28.5L318.2 304H320c17.7 0 32-14.3 32-32V224c0-35.3-28.7-64-64-64H224zM132.3 394.2c13-2.4 21.7-14.9 19.3-27.9s-14.9-21.7-27.9-19.3c-32.4 5.9-60.9 14.2-82 24.8c-10.5 5.3-20.3 11.7-27.8 19.6C6.4 399.5 0 410.5 0 424c0 21.4 15.5 36.1 29.1 45c14.7 9.6 34.3 17.3 56.4 23.4C130.2 504.7 190.4 512 256 512s125.8-7.3 170.4-19.6c22.1-6.1 41.8-13.8 56.4-23.4c13.7-8.9 29.1-23.6 29.1-45c0-13.5-6.4-24.5-14-32.6c-7.5-7.9-17.3-14.3-27.8-19.6c-21-10.6-49.5-18.9-82-24.8c-13-2.4-25.5 6.3-27.9 19.3s6.3 25.5 19.3 27.9c30.2 5.5 53.7 12.8 69 20.5c3.2 1.6 5.8 3.1 7.9 4.5c3.6 2.4 3.6 7.2 0 9.6c-8.8 5.7-23.1 11.8-43 17.3C374.3 457 318.5 464 256 464s-118.3-7-157.7-17.9c-19.9-5.5-34.2-11.6-43-17.3c-3.6-2.4-3.6-7.2 0-9.6c2.1-1.4 4.8-2.9 7.9-4.5c15.3-7.7 38.8-14.9 69-20.5z" />
+                        </svg>
+                        <h3 class="fs-2hx text-white mb-5" id="clients"
+                            data-kt-scroll-offset="{default: 125, lg: 150}">
+                            Balai Kota Makassar</h3>
+                        <!--end::Title-->
+                    </div>
+                    <!--end::Heading-->
                 </div>
                 <!--end::Container-->
                 <!--begin::Separator-->
@@ -1857,6 +1976,51 @@
                             <!--end::Logo image-->
                         </div>
                         <!--end::Copyright-->
+                        <!--begin::Navs-->
+                        <div class="d-flex justify-content-center">
+                            <!--begin::Links-->
+                            <div class="d-flex fw-semibold flex-column me-20">
+                                <!--begin::Subtitle-->
+                                <h4 class="fw-bold text-gray-400 mb-6">Contatc</h4>
+                                <!--end::Subtitle-->
+                                <!--begin::Link-->
+                                <a href="https://www.instagram.com/keenthemes" class="mb-6">
+                                    <img src="admin/assets/media/svg/brand-logos/ebay.svg" class="h-20px me-2"
+                                        alt="" />
+                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
+                                        -</span>
+                                </a>
+                                <!--end::Link-->
+                                <!--begin::Link-->
+                                <a href="https://www.instagram.com/keenthemes" class="mb-6">
+                                    <img src="admin/assets/media/svg/brand-logos/instagram-2-1.svg"
+                                        class="h-20px me-2" alt="" />
+                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
+                                        @indonesiayouthsummit</span>
+                                </a>
+                                <!--end::Link-->
+                            </div>
+                            <!--end::Links-->
+                            <!--begin::Links-->
+                            <div class="d-flex fw-semibold flex-column ms-lg-20">
+                                <!--begin::Subtitle-->
+                                <h4 class="fw-bold text-gray-400 mb-6">Helps</h4>
+                                <!--end::Subtitle-->
+                                <!--begin::Link-->
+                                <a href="https://www.facebook.com/keenthemes" class="mb-6">
+                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Help
+                                        Center</span>
+                                </a>
+                                <!--end::Link-->
+                                <!--begin::Link-->
+                                <a href="https://github.com/KeenthemesHub" class="mb-6">
+                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</span>
+                                </a>
+                                <!--end::Link-->
+                            </div>
+                            <!--end::Links-->
+                        </div>
+                        <!--end::Navs-->
                     </div>
                     <!--end::Wrapper-->
                 </div>
@@ -1916,6 +2080,24 @@
     <script src="{{ asset('admin/assets/js/custom/pages/pricing/general.js') }}"></script>
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
+
+    <script>
+        $(".kt_datepicker_1").flatpickr({
+            dateFormat: "d-m-Y",
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+            @if (Session::has('status'))
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Mantap',
+                    text: @json(Session::get('message')),
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+            @endif
+        });
+    </script>
+
 </body>
 <!--end::Body-->
 

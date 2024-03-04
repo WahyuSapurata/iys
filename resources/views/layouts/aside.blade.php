@@ -61,6 +61,24 @@
                     </a>
                 </div>
                 <!--end::Menu item-->
+
+                <!--begin::Menu item-->
+                <div class="menu-item">
+                    <a class="menu-link {{ isset($path[1]) && $path[1] === 'data-pendaftar' ? 'active' : '' }}"
+                        href="{{ route('admin.data-pendaftar') }}">
+                        <span class="menu-icon">
+                            <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
+                            <span class="svg-icon svg-icon-2">
+                                <img src="{{ isset($path[1]) && $path[1] === 'data-pendaftar' ? url('admin/assets/media/icons/aside/masterdataact.svg') : url('/admin/assets/media/icons/aside/masterdatadef.svg') }}"
+                                    alt="">
+                            </span>
+                            <!--end::Svg Icon-->
+                        </span>
+                        <span class="menu-title"
+                            style="{{ isset($path[1]) && $path[1] === 'data-pendaftar' ? 'color: #F4BE2A' : 'color: #FFFFFF' }}">Pendaftar</span>
+                    </a>
+                </div>
+                <!--end::Menu item-->
             @endif
 
             {{-- <div class="menu-item">
