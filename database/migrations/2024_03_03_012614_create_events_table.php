@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('jam_mulai');
             $table->string('jam_selesai');
             $table->text('link_youtube')->nullable();
-            $table->string('deskripsi');
+            $table->text('deskripsi');
             $table->text('foto')->nullable();
             $table->timestamps();
         });
