@@ -20,10 +20,10 @@ return new class extends Migration
             $table->string('jenis_kelamin');
             $table->string('tanggal_lahir');
             $table->string('no_telp');
-            $table->string('akun_sosmed');
+            $table->text('akun_sosmed');
             $table->string('profesi');
             $table->string('instansi');
-            $table->string('motivasi');
+            $table->text('motivasi');
             $table->string('riwayat_penyakit');
             $table->string('ukuran');
             $table->string('file_ktp');
