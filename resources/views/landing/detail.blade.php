@@ -37,11 +37,13 @@
         <!--begin::Header Section-->
         <div class="mb-0" id="home">
             <!--begin::Wrapper-->
-            <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg"
-                style="background-image: url(admin/assets/media/svg/illustrations/landing.svg)">
+            <div class="position-relative">
+                <div class="position-absolute w-100 z-index-n2">
+                    <img src="{{ asset('cover_landing.jpg') }}" class="w-100" style="height: 100vh" alt="">
+                </div>
                 <!--begin::Header-->
-                <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header"
-                    data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+                <div class="landing-header" style="background-color: #27010191" data-kt-sticky="true"
+                    data-kt-sticky-name="landing-header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
                     <!--begin::Container-->
                     <div class="container">
                         <!--begin::Wrapper-->
@@ -91,7 +93,7 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link active py-3 px-4 px-xxl-6" href="#kt_body"
+                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href=""
                                                 data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">2023</a>
                                             <!--end::Menu link-->
                                         </div>
@@ -99,8 +101,9 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#how-it-works"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">2024</a>
+                                            <a class="menu-link nav-link active py-3 px-4 px-xxl-6"
+                                                href="{{ route('landing') }}" data-kt-scroll-toggle="true"
+                                                data-kt-drawer-dismiss="true">2024</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
@@ -122,21 +125,14 @@
                 </div>
                 <!--end::Header-->
                 <!--begin::Landing hero-->
-                <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9">
+                <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9"
+                    data-kt-sticky="true" data-kt-sticky-name="landing-partner"
+                    data-kt-sticky-offset="{default: '200px', lg: '300px'}">
                     <!--begin::Heading-->
                     <div class="text-center mb-5 mb-lg-10 py-10 py-lg-20">
-                        <!--begin::Title-->
-                        <h1 class="text-white lh-base fw-bold fs-2x fs-lg-3x mb-15">INDONESIA YOUTH SUMMIT
-                            {{-- <br />with
-                            <span
-                                style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                                <span id="kt_landing_hero_text">The Best Theme Ever</span>
-                            </span> --}}
-                        </h1>
-                        <!--end::Title-->
                         <!--begin::Action-->
-                        <button class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#kt_modal_1">Daftar</button>
+                        {{-- <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#kt_modal_1">Daftar</button> --}}
                         <div class="modal fade" tabindex="-1" id="kt_modal_1">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -294,11 +290,13 @@
                                 </div>
                             </div>
                         </div>
+
                         <!--end::Action-->
                     </div>
                     <!--end::Heading-->
                     <!--begin::Clients-->
-                    <div class="d-flex flex-center flex-wrap position-relative px-5">
+                    <div class="d-flex flex-center flex-wrap position-relative px-5 our-partner"
+                        style="margin-top: 260px">
                         <!--begin::Client-->
                         <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
                             <img src="{{ asset('admin/assets/media/svg/brand-logos/fujifilm.svg') }}"
@@ -355,19 +353,10 @@
                 <!--end::Landing hero-->
             </div>
             <!--end::Wrapper-->
-            <!--begin::Curve bottom-->
-            <div class="landing-curve landing-dark-color mb-10 mb-lg-20">
-                <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z"
-                        fill="currentColor"></path>
-                </svg>
-            </div>
-            <!--end::Curve bottom-->
         </div>
         <!--end::Header Section-->
         <!--begin::How It Works Section-->
-        <div class="mb-n10 mb-lg-n20 z-index-2">
+        <div class="mb-n10 mb-lg-n20 z-index-2" style="margin-top: 100px">
             <!--begin::Container-->
             <div class="container">
                 <!--begin::Heading-->
@@ -379,7 +368,7 @@
                         {{ $data_event->event }}</h4>
                     <!--end::Title-->
                     <!--begin::Text-->
-                    <div class="fs-5 text-muted fw-bold">
+                    <div class="fs-5 text-muted fw-bold" style="padding: 0 100px; text-align: justify">
                         {{ $data_event->deskripsi }}
                     </div>
                     <!--end::Text-->
@@ -650,7 +639,7 @@
                 <!--end::Row-->
                 <!--begin::Highlight-->
                 <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13"
-                    style="background: linear-gradient(90deg, #20AA3E 0%, #03A588 100%);">
+                    style="background: linear-gradient(90deg, #fe1a19 0%, #fff9f9 100%);">
                     <!--begin::Content-->
                     <div class="my-2 me-5">
                         <!--begin::Title-->
@@ -665,7 +654,7 @@
                     <!--end::Content-->
                     <!--begin::Link-->
                     <button data-bs-toggle="modal" data-bs-target="#kt_modal_1"
-                        class="btn btn-lg btn-outline border-2 btn-outline-white flex-shrink-0 my-2">
+                        class="btn btn-lg btn-outline border-2 btn-outline-danger flex-shrink-0 my-2">
                         Daftar</button>
                     <!--end::Link-->
                 </div>
@@ -679,14 +668,19 @@
             <!--begin::Curve top-->
             <div class="landing-curve landing-dark-color">
                 <svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <style>
+                        svg {
+                            fill: #fe4646;
+                        }
+                    </style>
                     <path
-                        d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z"
-                        fill="currentColor"></path>
+                        d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z">
+                    </path>
                 </svg>
             </div>
             <!--end::Curve top-->
             <!--begin::Wrapper-->
-            <div class="landing-dark-bg pt-20">
+            <div class="pt-20" style="background-image: linear-gradient(to top, #080808cc, #fe4646)">
                 <!--begin::Container-->
                 <div class="container">
                     <!--begin::Heading-->
@@ -699,9 +693,9 @@
                     </div>
                     <!--end::Heading-->
                     <!--begin::Row-->
-                    <div class="row py-5 py-lg-10">
+                    <div class="py-5 py-lg-10">
                         <!--begin::Col-->
-                        <div class="col-lg-12 mb-10 mb-lg-0">
+                        <div class="mb-10 mb-lg-0">
                             <!--begin::Block-->
                             <div class="rounded landing-dark-border p-9 mb-10 embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item"
@@ -716,6 +710,7 @@
                                 position: relative;
                                 display: block;
                                 width: 100%;
+                                height: 55vh;
                                 padding: 0;
                                 overflow: hidden;
                             }
@@ -777,7 +772,7 @@
                         <div class="d-flex align-items-center order-2 order-md-1">
                             <!--begin::Logo-->
                             <a href="../../demo1/dist/landing.html">
-                                <img alt="Logo" src="{{ asset('admin/assets/media/logos/landing.svg') }}"
+                                <img alt="Logo" src="admin/assets/media/logos/landing.svg"
                                     class="h-15px h-md-20px" />
                             </a>
                             <!--end::Logo image-->
@@ -796,15 +791,15 @@
                                 <!--end::Subtitle-->
                                 <!--begin::Link-->
                                 <a href="https://www.instagram.com/keenthemes" class="mb-6">
-                                    <img src="{{ asset('admin/assets/media/svg/brand-logos/ebay.svg') }}"
-                                        class="h-20px me-2" alt="" />
+                                    <img src="admin/assets/media/svg/brand-logos/ebay.svg" class="h-20px me-2"
+                                        alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
                                         -</span>
                                 </a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
                                 <a href="https://www.instagram.com/keenthemes" class="mb-6">
-                                    <img src="{{ asset('admin/assets/media/svg/brand-logos/instagram-2-1.svg') }}"
+                                    <img src="admin/assets/media/svg/brand-logos/instagram-2-1.svg"
                                         class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
                                         @indonesiayouthsummit</span>

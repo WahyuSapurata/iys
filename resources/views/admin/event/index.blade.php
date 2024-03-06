@@ -145,7 +145,7 @@
                     </div>
 
                     <div class="mb-10">
-                        <label for="" class="form-label">Deskripsi</label>
+                        <label for="deskripsi" class="form-label">Deskripsi</label>
                         <textarea id="deskripsi" name="deskripsi" class="form-control" data-kt-autosize="true"></textarea>
                         <small class="text-danger deskripsi_error"></small>
                     </div>
@@ -223,8 +223,6 @@
             if ($.fn.DataTable.isDataTable('#kt_table_data')) {
                 $('#kt_table_data').DataTable().clear().destroy();
             }
-
-            var groupedData = {}; // Menyimpan nilai grup sebelumnya
 
             // Initialize DataTable
             $('#kt_table_data').DataTable({

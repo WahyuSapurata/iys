@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('jam_selesai');
             $table->text('link_youtube')->nullable();
             $table->text('deskripsi');
-            $table->text('foto')->nullable();
+            $table->json('speakers')->nullable();
             $table->timestamps();
         });
     }

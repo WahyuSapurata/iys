@@ -21,7 +21,7 @@ class Event extends Model
         'jam_selesai',
         'link_youtube',
         'deskripsi',
-        'foto',
+        'speakers',
     ];
 
     protected static function boot()

@@ -55750,9 +55750,13 @@ label.rating-label:hover~.rating-label>.svg-icon svg:hover [fill]:not(.permanent
     right: 0;
     left: 0;
     z-index: 100;
-    background-color: #fff;
+    background-color: #fff !important;
     box-shadow: 0 10px 30px 0 rgba(82, 63, 105, 0.05);
     height: 70px;
+}
+
+[data-kt-sticky-landing-partner="on"] .our-partner {
+    margin-top: 335px !important;
 }
 
 [data-kt-sticky-landing-header="on"] .landing-header .logo-sticky {
