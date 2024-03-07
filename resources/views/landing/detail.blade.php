@@ -775,19 +775,26 @@
                 <!--begin::Container-->
                 <div class="container">
                     <!--begin::Wrapper-->
-                    <div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
+                    <div class="d-flex flex-column flex-md-row justify-content-between py-7 py-lg-10">
                         <!--begin::Copyright-->
-                        <div class="d-flex align-items-center order-2 order-md-1">
-                            <!--begin::Logo-->
-                            <a href="">
-                                <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
-                                    class="h-60px h-md-65px" />
-                            </a>
-                            <!--end::Logo image-->
-                            <!--begin::Logo image-->
-                            <span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="https://keenthemes.com">©
-                                2024 Dispora dan Muda.in</span>
-                            <!--end::Logo image-->
+                        <div class="order-2 order-md-1">
+                            <!--begin::Subtitle-->
+                            <h4 class="fw-bold text-gray-400 mb-6">Powered by</h4>
+                            <!--end::Subtitle-->
+                            <div class="d-flex gap-5">
+                                <!--begin::Logo-->
+                                <a href="">
+                                    <img alt="Logo" src="{{ asset('Logo_dispora.png') }}"
+                                        class="h-60px h-md-65px" />
+                                </a>
+                                <!--end::Logo image-->
+                                <!--begin::Logo-->
+                                <a href="">
+                                    <img alt="Logo" src="{{ asset('logo_muda..png') }}"
+                                        class="h-60px h-md-65px" />
+                                </a>
+                                <!--end::Logo image-->
+                            </div>
                         </div>
                         <!--end::Copyright-->
                         <!--begin::Navs-->
@@ -799,8 +806,8 @@
                                 <!--end::Subtitle-->
                                 <!--begin::Link-->
                                 <a href="" class="mb-6">
-                                    <img src="{{ asset('admin/assets/media/svg/brand-logos/ebay.svg') }}"
-                                        class="h-20px me-2" alt="" />
+                                    <img src="admin/assets/media/svg/brand-logos/ebay.svg" class="h-20px me-2"
+                                        alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
                                         indonesianyouthsummitiys@gmail.com</span>
                                 </a>
@@ -808,7 +815,7 @@
                                 <!--begin::Link-->
                                 <a href="https://www.instagram.com/indonesiayouthsummit/" target="_blank"
                                     class="mb-6">
-                                    <img src="{{ asset('admin/assets/media/svg/brand-logos/instagram-2-1.svg') }}"
+                                    <img src="admin/assets/media/svg/brand-logos/instagram-2-1.svg"
                                         class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
                                         @indonesiayouthsummit</span>
@@ -817,8 +824,8 @@
                                 <!--begin::Link-->
                                 <a href="https://api.whatsapp.com/send?phone=6289517468703" target="_blank"
                                     class="mb-6">
-                                    <img src="{{ asset('admin/assets/media/svg/brand-logos/whatsapp.svg') }}"
-                                        class="h-20px me-2" alt="" />
+                                    <img src="admin/assets/media/svg/brand-logos/whatsapp.svg" class="h-20px me-2"
+                                        alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Whatsapp :
                                         089517468703</span>
                                 </a>
