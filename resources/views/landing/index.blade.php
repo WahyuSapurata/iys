@@ -40,6 +40,8 @@
             <div class="position-relative">
                 <div class="position-absolute w-100 z-index-n2">
                     <img src="{{ asset('cover_landing.jpg') }}" class="w-100" style="height: 100vh" alt="">
+                    <img src="{{ asset('logo_muda..png') }}" class="w-100px position-absolute bottom-0 end-0"
+                        style="background-color: #fff; border-top-left-radius: 30px" alt="">
                 </div>
                 <!--begin::Header-->
                 <div class="landing-header" style="background-color: #27010191" data-kt-sticky="true"
@@ -70,10 +72,10 @@
                                 <!--end::Mobile menu toggle-->
                                 <!--begin::Logo image-->
                                 <a href="../../demo1/dist/landing.html">
-                                    <img alt="Logo" src="{{ asset('admin/assets/media/logos/landing.svg') }}"
-                                        class="logo-default h-25px h-lg-30px" />
-                                    <img alt="Logo" src="{{ asset('admin/assets/media/logos/landing-dark.svg') }}"
-                                        class="logo-sticky h-20px h-lg-25px" />
+                                    <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
+                                        class="logo-default h-25px h-lg-65px" />
+                                    <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
+                                        class="logo-sticky h-20px h-lg-60px" />
                                 </a>
                                 <!--end::Logo image-->
                             </div>
@@ -89,7 +91,7 @@
                                     data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
                                     <!--begin::Menu-->
                                     <div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-semibold"
-                                        id="kt_landing_menu">
+                                        id="kt_landing_menu" style="align-items: center">
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
@@ -109,8 +111,13 @@
                                         <!--end::Menu item-->
                                         <!--begin::Toolbar-->
                                         <div class="flex-equal ms-15">
-                                            <button class="btn btn-success" data-bs-toggle="modal"
+                                            <button class="btn btn-danger" data-bs-toggle="modal"
                                                 data-bs-target="#kt_modal_1">Daftar</button>
+                                        </div>
+
+                                        <div class="d-flex ms-10" style="align-items: center; gap: 10px">
+                                            <img src="{{ asset('pemkot.png') }}" class="h-60px" alt="">
+                                            <img src="{{ asset('Logo_dispora.png') }}" class="h-60px" alt="">
                                         </div>
                                         <!--end::Toolbar-->
                                     </div>
@@ -363,27 +370,21 @@
                 <div class="text-center mb-17">
                     <!--begin::Title-->
                     <h3 class="fs-2hx text-dark" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">
-                        OVERVIEW EVENT</h3>
+                        Konferensi Pemuda Terbesar Se-Indonesia</h3>
                     <h4 class="text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">
                         Indonesia Youth Summit</h4>
                     <!--end::Title-->
                     <!--begin::Text-->
                     <div style="padding: 0 100px; text-align: justify">
-                        <div class="fs-5 text-muted fw-bold">IYS merupakan wadah kolaborasi dan penguatan sinergi
-                            pemuda Indonesia untuk meningkatkan kepemimpinan dan
-                            berkontribusi positif dalam upaya menyusun dan
-                            mendeklarasikan suara kepemudaan di Indonesia terkait
-                            strategi dalam mendukung agenda pembangunan nasional.
-                        </div>
-                        <div class="fs-5 text-muted fw-bold">IYS diinisiasi oleh Muda.in dan berkolaborasi dengan Dinas
-                            Pemuda dan Olahraga Kota Makassar. Tahun 2024, IYS
-                            mengusung tema “ Pemuda Dan Suara Perubahan untuk
-                            Indonesia Emas 2045”. Melalui IYS, diharapkan tercipta
-                            serangkaian solusi konstruktif atas permasalahan yang tengah
-                            di hadapi oleh Indonesia dalam agenda pembangunan nasional
-                            dan tersusunnya rekomendasi strategi untuk mewujudkan Visi
-                            Indonesia Emas 2045 yang dituangkan pada Dokumen ’Suara
-                            Pemuda Indonesia’.
+                        <div class="fs-5 text-muted fw-bold">Indonesia Youth Summit merupakan wadah kolaborasi dan
+                            penguatan sinergi pemuda Indonesia untuk meningkatkan kepemimpinan dan berkontribusi
+                            langsung dalam penyusunan dan deklarasi ‘Suara Pemuda Indonesia’ yang merupakan rekomendasi
+                            kebijakan nasional. Dengan memadukan sidang pemuda, talkshow inspiratif, dan kegiatan
+                            interaktif lainnya, kegiatan ini menjadi platform bagi pemuda untuk bertukar ide,
+                            mendiskusikan isu-isu pembangunan, dan merencanakan tindakan konkret untuk perubahan positif
+                            menuju Indonesia yang lebih maju. Melalui kolaborasi pemuda pada forum ini, diharapkan
+                            tercipta serangkaian solusi konstruktif atas permasalahan yang tengah dihadapi dan evaluasi
+                            agenda Pembangunan nasional Indonesia.
                         </div>
                     </div>
                     <!--end::Text-->
@@ -408,7 +409,7 @@
                                 <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">1</span>
                                 <!--end::Badge-->
                                 <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Benefits</div>
+                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Konsolidasi agen perubahan</div>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
@@ -430,8 +431,7 @@
                                 <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">2</span>
                                 <!--end::Badge-->
                                 <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Platform Pengembangan Keterampilan
-                                    Kepemimpinan</div>
+                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Jaringan pemuda nasional</div>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
@@ -453,8 +453,7 @@
                                 <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">3</span>
                                 <!--end::Badge-->
                                 <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Berkontribusi dalam Agenda Pembangunan
-                                    Nasional</div>
+                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Leadership skill</div>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
@@ -476,8 +475,8 @@
                                 <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">4</span>
                                 <!--end::Badge-->
                                 <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Keterlibatan dalam Penyusunan Rekomendasi
-                                    Kebijakan Nasional</div>
+                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Berkontribusi dalam penyusunan rekomendasi
+                                    kebijakan nasional</div>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
@@ -499,8 +498,8 @@
                                 <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">5</span>
                                 <!--end::Badge-->
                                 <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Kesempatan Bertemu Langsung dengan Tokoh
-                                    Nasional</div>
+                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Kesempatan belajar langsung dengan tokoh
+                                    inspiratif nasional</div>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
@@ -522,7 +521,75 @@
                                 <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">6</span>
                                 <!--end::Badge-->
                                 <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Sertifikat</div>
+                                <div class="fs-5 fs-lg-3 fw-bold text-dark">E-sertifikat dari KEMENPORA RI</div>
+                                <!--end::Title-->
+                            </div>
+                            <!--end::Heading-->
+                        </div>
+                        <!--end::Story-->
+                    </div>
+                    <!--end::Col-->
+                    <!--begin::Col-->
+                    <div class="col-md-4 px-5">
+                        <!--begin::Story-->
+                        <div class="text-center mb-10 mb-md-0">
+                            <!--begin::Illustration-->
+                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/15.png') }}"
+                                class="mh-125px mb-9" alt="" />
+                            <!--end::Illustration-->
+                            <!--begin::Heading-->
+                            <div class="d-flex flex-center mb-5">
+                                <!--begin::Badge-->
+                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">6</span>
+                                <!--end::Badge-->
+                                <!--begin::Title-->
+                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Transportasi dari meeting point (Bandara
+                                    Sultan Hasanuddin & Rujab Walikota Makassar) ke lokasi kegiatan</div>
+                                <!--end::Title-->
+                            </div>
+                            <!--end::Heading-->
+                        </div>
+                        <!--end::Story-->
+                    </div>
+                    <!--end::Col-->
+                    <!--begin::Col-->
+                    <div class="col-md-4 px-5">
+                        <!--begin::Story-->
+                        <div class="text-center mb-10 mb-md-0">
+                            <!--begin::Illustration-->
+                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/15.png') }}"
+                                class="mh-125px mb-9" alt="" />
+                            <!--end::Illustration-->
+                            <!--begin::Heading-->
+                            <div class="d-flex flex-center mb-5">
+                                <!--begin::Badge-->
+                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">6</span>
+                                <!--end::Badge-->
+                                <!--begin::Title-->
+                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Konsumsi dan tempat tinggal selama kegiatan
+                                </div>
+                                <!--end::Title-->
+                            </div>
+                            <!--end::Heading-->
+                        </div>
+                        <!--end::Story-->
+                    </div>
+                    <!--end::Col-->
+                    <!--begin::Col-->
+                    <div class="col-md-4 px-5">
+                        <!--begin::Story-->
+                        <div class="text-center mb-10 mb-md-0">
+                            <!--begin::Illustration-->
+                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/15.png') }}"
+                                class="mh-125px mb-9" alt="" />
+                            <!--end::Illustration-->
+                            <!--begin::Heading-->
+                            <div class="d-flex flex-center mb-5">
+                                <!--begin::Badge-->
+                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">6</span>
+                                <!--end::Badge-->
+                                <!--begin::Title-->
+                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Seminar Kit</div>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
@@ -619,8 +686,9 @@
                                 <div class="text-dark text-center fw-semibold fs-6">Open
                                     Registration &
                                     Submit PPT <br>
-                                    05 Maret – 21
-                                    Mei 2024</div>
+                                    <span class="text-danger fw-bolder">05 Maret – 21
+                                        Mei 2024</span>
+                                </div>
                                 <!--end::Label-->
                                 <div>
                                     <img src="{{ asset('arrow.png') }}" style="margin-right: -35px" alt="">
@@ -633,7 +701,8 @@
                                 <div class="text-dark text-center fw-semibold fs-6">Official
                                     Announcement
                                     Delegates <br>
-                                    24 Mei 2024</div>
+                                    <span class="text-danger fw-bolder">24 Mei 2024</span>
+                                </div>
                                 <!--end::Label-->
                                 <div>
                                     <img src="{{ asset('arrow.png') }}" style="margin-right: -35px" alt="">
@@ -646,7 +715,8 @@
                                 <div class="text-dark text-center fw-semibold fs-6">Online
                                     Technical
                                     Meeting <br>
-                                    26 Mei 2024</div>
+                                    <span class="text-danger fw-bolder">26 Mei 2024</span>
+                                </div>
                                 <!--end::Label-->
                                 <div>
                                     <img src="{{ asset('arrow.png') }}" style="margin-right: -35px" alt="">
@@ -657,7 +727,8 @@
                             <div class="col-md-2 d-flex align-items-center bg-white rounded-2 shadow-lg p-3 h-100px">
                                 <!--begin::Label-->
                                 <div class="text-dark text-center fw-semibold fs-6" style="width: 130px">Webinar<br>
-                                    28 Mei 2024</div>
+                                    <span class="text-danger fw-bolder">28 Mei 2024</span>
+                                </div>
                                 <!--end::Label-->
                                 <div>
                                     <img src="{{ asset('arrow.png') }}" style="margin-right: -35px" alt="">
@@ -669,7 +740,8 @@
                                 <!--begin::Label-->
                                 <div class="text-dark text-center fw-semibold fs-6">Indonesia
                                     Youth Summit <br>
-                                    Juni 2024</div>
+                                    <span class="text-danger fw-bolder">Juni 2024</span>
+                                </div>
                                 <!--end::Label-->
                             </div>
                             <!--end::Item-->
@@ -709,15 +781,10 @@
                     <!--end::Title-->
                     <!--begin::Sub-title-->
                     <div class="fs-5 text-muted fw-bold" style="padding: 0 100px; text-align: justify">
-                        <h4 class="text-center text-dark mb-5" id="how-it-works"
-                            data-kt-scroll-offset="{default: 100, lg: 150}">
-                            Atmospher</h4>
-                        Indonesia Youth Summit dilaksanakan dengan konsep youth camp. Suasana formal
-                        tercermin pada sesi persidangan. Sesi yang diisi oleh keterlibatan aktif para pemuda
-                        dalam menyuarakan pandangan dan rekomendasi mereka. Sementara suasana casual
-                        dapat diperoleh melalui atmosfer camping dengan berbagai outdoor activites,
-                        entertaintment, bonfire and social night, hingga sesi inspirational talks yang
-                        menghadirkan para tokoh inspiratif nasional.
+                        Indonesia Youth Summit menjadi kegiatan tahunan yang diselenggarakan oleh Dinas Pemuda dan
+                        Olahraga Kota Makassar yang berkolaborasi dengan Muda.in. Tahun 2024, Indonesia Youth Summit
+                        mengusung tema “Pemuda dan Suara Perubahan untuk Indonesia Emas 2045”. Pelaksanaan Indonesia
+                        Youth Summit dikemas dengan konsep youth camp.
                     </div>
                     <!--end::Sub-title=-->
                 </div>
@@ -1858,7 +1925,7 @@
                     <!--begin::Content-->
                     <div class="my-2 me-5">
                         <!--begin::Title-->
-                        <div class="fs-1 fs-lg-2qx fw-bold text-white mb-2">WEBSITE INDONESIA YOUTH SUMMIT
+                        <div class="fs-1 fs-lg-2qx fw-bold text-white mb-2">DAFTAR INDONESIA YOUTH SUMMIT
                         </div>
                         <!--end::Title-->
                         <!--begin::Description-->
@@ -1914,7 +1981,7 @@
                             <!--begin::Block-->
                             <div class="rounded landing-dark-border p-9 mb-10 embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.814670947063!2d119.40543867397992!3d-5.133527094843638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02af902bc323%3A0x3dabe01dae6ec980!2sKantor%20Wali%20Kota%20Makassar!5e0!3m2!1sid!2sid!4v1709474336989!5m2!1sid!2sid"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7899906801363!2d119.5751664739799!3d-5.137486594839698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee520c8652ae3%3A0x42f4f41d03bb871b!2sTokka%20Tena%20Rata!5e0!3m2!1sid!2sid!4v1709790655010!5m2!1sid!2sid"
                                     style="border:0;" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
@@ -1970,7 +2037,7 @@
                         </svg>
                         <h3 class="fs-2hx text-white mb-5" id="clients"
                             data-kt-scroll-offset="{default: 125, lg: 150}">
-                            Balai Kota Makassar</h3>
+                            Tokka Tena Rata</h3>
                         <!--end::Title-->
                     </div>
                     <!--end::Heading-->
@@ -1986,14 +2053,14 @@
                         <!--begin::Copyright-->
                         <div class="d-flex align-items-center order-2 order-md-1">
                             <!--begin::Logo-->
-                            <a href="../../demo1/dist/landing.html">
-                                <img alt="Logo" src="admin/assets/media/logos/landing.svg"
-                                    class="h-15px h-md-20px" />
+                            <a href="">
+                                <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
+                                    class="h-60px h-md-65px" />
                             </a>
                             <!--end::Logo image-->
                             <!--begin::Logo image-->
                             <span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="https://keenthemes.com">©
-                                2022 Keenthemes Inc.</span>
+                                2024 Dispora dan Muda.in</span>
                             <!--end::Logo image-->
                         </div>
                         <!--end::Copyright-->
@@ -2005,19 +2072,29 @@
                                 <h4 class="fw-bold text-gray-400 mb-6">Contatc</h4>
                                 <!--end::Subtitle-->
                                 <!--begin::Link-->
-                                <a href="https://www.instagram.com/keenthemes" class="mb-6">
+                                <a href="" class="mb-6">
                                     <img src="admin/assets/media/svg/brand-logos/ebay.svg" class="h-20px me-2"
                                         alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
-                                        -</span>
+                                        indonesianyouthsummitiys@gmail.com</span>
                                 </a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
-                                <a href="https://www.instagram.com/keenthemes" class="mb-6">
+                                <a href="https://www.instagram.com/indonesiayouthsummit/" target="_blank"
+                                    class="mb-6">
                                     <img src="admin/assets/media/svg/brand-logos/instagram-2-1.svg"
                                         class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
                                         @indonesiayouthsummit</span>
+                                </a>
+                                <!--end::Link-->
+                                <!--begin::Link-->
+                                <a href="https://api.whatsapp.com/send?phone=6289517468703" target="_blank"
+                                    class="mb-6">
+                                    <img src="admin/assets/media/svg/brand-logos/whatsapp.svg" class="h-20px me-2"
+                                        alt="" />
+                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Whatsapp :
+                                        089517468703</span>
                                 </a>
                                 <!--end::Link-->
                             </div>

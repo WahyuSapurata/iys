@@ -40,6 +40,8 @@
             <div class="position-relative">
                 <div class="position-absolute w-100 z-index-n2">
                     <img src="{{ asset('cover_landing.jpg') }}" class="w-100" style="height: 100vh" alt="">
+                    <img src="{{ asset('logo_muda..png') }}" class="w-100px position-absolute bottom-0 end-0"
+                        style="background-color: #fff; border-top-left-radius: 30px" alt="">
                 </div>
                 <!--begin::Header-->
                 <div class="landing-header" style="background-color: #27010191" data-kt-sticky="true"
@@ -70,10 +72,10 @@
                                 <!--end::Mobile menu toggle-->
                                 <!--begin::Logo image-->
                                 <a href="../../demo1/dist/landing.html">
-                                    <img alt="Logo" src="{{ asset('admin/assets/media/logos/landing.svg') }}"
-                                        class="logo-default h-25px h-lg-30px" />
-                                    <img alt="Logo" src="{{ asset('admin/assets/media/logos/landing-dark.svg') }}"
-                                        class="logo-sticky h-20px h-lg-25px" />
+                                    <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
+                                        class="logo-default h-25px h-lg-65px" />
+                                    <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
+                                        class="logo-sticky h-20px h-lg-60px" />
                                 </a>
                                 <!--end::Logo image-->
                             </div>
@@ -89,7 +91,7 @@
                                     data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
                                     <!--begin::Menu-->
                                     <div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-semibold"
-                                        id="kt_landing_menu">
+                                        id="kt_landing_menu" style="align-items: center">
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
@@ -109,8 +111,14 @@
                                         <!--end::Menu item-->
                                         <!--begin::Toolbar-->
                                         <div class="flex-equal ms-15">
-                                            <button class="btn btn-success" data-bs-toggle="modal"
+                                            <button class="btn btn-danger" data-bs-toggle="modal"
                                                 data-bs-target="#kt_modal_1">Daftar</button>
+                                        </div>
+
+                                        <div class="d-flex ms-10" style="align-items: center; gap: 10px">
+                                            <img src="{{ asset('pemkot.png') }}" class="h-60px" alt="">
+                                            <img src="{{ asset('Logo_dispora.png') }}" class="h-60px"
+                                                alt="">
                                         </div>
                                         <!--end::Toolbar-->
                                     </div>
@@ -643,12 +651,12 @@
                     <!--begin::Content-->
                     <div class="my-2 me-5">
                         <!--begin::Title-->
-                        <div class="fs-1 fs-lg-2qx fw-bold text-white mb-2">WEBSITE INDONESIA YOUTH SUMMIT
+                        <div class="fs-1 fs-lg-2qx fw-bold text-white mb-2">DAFTAR INDONESIA YOUTH SUMMIT
                         </div>
                         <!--end::Title-->
                         <!--begin::Description-->
                         {{-- <div class="fs-6 fs-lg-5 text-white fw-semibold opacity-75">Join over 100,000 Professionals
-                            Community to Stay Ahead</div> --}}
+                        Community to Stay Ahead</div> --}}
                         <!--end::Description-->
                     </div>
                     <!--end::Content-->
@@ -699,7 +707,7 @@
                             <!--begin::Block-->
                             <div class="rounded landing-dark-border p-9 mb-10 embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.814670947063!2d119.40543867397992!3d-5.133527094843638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02af902bc323%3A0x3dabe01dae6ec980!2sKantor%20Wali%20Kota%20Makassar!5e0!3m2!1sid!2sid!4v1709474336989!5m2!1sid!2sid"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7899906801363!2d119.5751664739799!3d-5.137486594839698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee520c8652ae3%3A0x42f4f41d03bb871b!2sTokka%20Tena%20Rata!5e0!3m2!1sid!2sid!4v1709790655010!5m2!1sid!2sid"
                                     style="border:0;" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
@@ -755,7 +763,7 @@
                         </svg>
                         <h3 class="fs-2hx text-white mb-5" id="clients"
                             data-kt-scroll-offset="{default: 125, lg: 150}">
-                            Balai Kota Makassar</h3>
+                            Tokka Tena Rata</h3>
                         <!--end::Title-->
                     </div>
                     <!--end::Heading-->
@@ -771,14 +779,14 @@
                         <!--begin::Copyright-->
                         <div class="d-flex align-items-center order-2 order-md-1">
                             <!--begin::Logo-->
-                            <a href="../../demo1/dist/landing.html">
-                                <img alt="Logo" src="admin/assets/media/logos/landing.svg"
-                                    class="h-15px h-md-20px" />
+                            <a href="">
+                                <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
+                                    class="h-60px h-md-65px" />
                             </a>
                             <!--end::Logo image-->
                             <!--begin::Logo image-->
                             <span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="https://keenthemes.com">©
-                                2022 Keenthemes Inc.</span>
+                                2024 Dispora dan Muda.in</span>
                             <!--end::Logo image-->
                         </div>
                         <!--end::Copyright-->
@@ -790,19 +798,29 @@
                                 <h4 class="fw-bold text-gray-400 mb-6">Contatc</h4>
                                 <!--end::Subtitle-->
                                 <!--begin::Link-->
-                                <a href="https://www.instagram.com/keenthemes" class="mb-6">
-                                    <img src="admin/assets/media/svg/brand-logos/ebay.svg" class="h-20px me-2"
-                                        alt="" />
+                                <a href="" class="mb-6">
+                                    <img src="{{ asset('admin/assets/media/svg/brand-logos/ebay.svg') }}"
+                                        class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
-                                        -</span>
+                                        indonesianyouthsummitiys@gmail.com</span>
                                 </a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
-                                <a href="https://www.instagram.com/keenthemes" class="mb-6">
-                                    <img src="admin/assets/media/svg/brand-logos/instagram-2-1.svg"
+                                <a href="https://www.instagram.com/indonesiayouthsummit/" target="_blank"
+                                    class="mb-6">
+                                    <img src="{{ asset('admin/assets/media/svg/brand-logos/instagram-2-1.svg') }}"
                                         class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
                                         @indonesiayouthsummit</span>
+                                </a>
+                                <!--end::Link-->
+                                <!--begin::Link-->
+                                <a href="https://api.whatsapp.com/send?phone=6289517468703" target="_blank"
+                                    class="mb-6">
+                                    <img src="{{ asset('admin/assets/media/svg/brand-logos/whatsapp.svg') }}"
+                                        class="h-20px me-2" alt="" />
+                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Whatsapp :
+                                        089517468703</span>
                                 </a>
                                 <!--end::Link-->
                             </div>
