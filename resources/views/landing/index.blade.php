@@ -18,7 +18,7 @@
     <meta property="og:url" content="https://keenthemes.com/metronic" />
     <meta property="og:site_name" content="Keenthemes | Metronic" />
     <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+    <link rel="shortcut icon" href="{{ asset('logo_kemenpora.png') }}" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -117,7 +117,8 @@
 
                                         <div class="d-flex ms-10" style="align-items: center; gap: 10px">
                                             <img src="{{ asset('pemkot.png') }}" class="h-60px" alt="">
-                                            <img src="{{ asset('Logo_dispora.png') }}" class="h-60px" alt="">
+                                            <img src="{{ asset('Logo_dispora.png') }}" class="h-60px"
+                                                alt="">
                                         </div>
                                         <!--end::Toolbar-->
                                     </div>
@@ -391,207 +392,104 @@
                 </div>
                 <!--end::Heading-->
                 <!--begin::Row-->
-                <div class="row w-100 gy-10 mb-md-20">
+                <div class="row w-100 gy-10 mb-md-20" style="padding: 0 100px;">
                     <h3 class="fs-2hx text-dark text-center" id="how-it-works"
                         data-kt-scroll-offset="{default: 100, lg: 150}">
                         BENEFITS</h3>
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
-                            <!--begin::Illustration-->
-                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/2.png') }}"
-                                class="mh-125px mb-9" alt="" />
-                            <!--end::Illustration-->
+                        <div class="shadow-lg">
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
-                                <!--begin::Badge-->
-                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">1</span>
-                                <!--end::Badge-->
-                                <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Konsolidasi agen perubahan</div>
-                                <!--end::Title-->
-                            </div>
+                            <img src="{{ asset('benefit/1.jpg') }}" class="w-100 rounded-2" alt="">
                             <!--end::Heading-->
                         </div>
                         <!--end::Story-->
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
-                            <!--begin::Illustration-->
-                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/8.png') }}"
-                                class="mh-125px mb-9" alt="" />
-                            <!--end::Illustration-->
+                        <div class="shadow-lg">
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
-                                <!--begin::Badge-->
-                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">2</span>
-                                <!--end::Badge-->
-                                <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Jaringan pemuda nasional</div>
-                                <!--end::Title-->
-                            </div>
+                            <img src="{{ asset('benefit/2.jpg') }}" class="w-100 rounded-2" alt="">
                             <!--end::Heading-->
                         </div>
                         <!--end::Story-->
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
-                            <!--begin::Illustration-->
-                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/12.png') }}"
-                                class="mh-125px mb-9" alt="" />
-                            <!--end::Illustration-->
+                        <div class="shadow-lg">
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
-                                <!--begin::Badge-->
-                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">3</span>
-                                <!--end::Badge-->
-                                <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Leadership skill</div>
-                                <!--end::Title-->
-                            </div>
+                            <img src="{{ asset('benefit/3.jpg') }}" class="w-100 rounded-2" alt="">
                             <!--end::Heading-->
                         </div>
                         <!--end::Story-->
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
-                            <!--begin::Illustration-->
-                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/13.png') }}"
-                                class="mh-125px mb-9" alt="" />
-                            <!--end::Illustration-->
+                        <div class="shadow-lg">
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
-                                <!--begin::Badge-->
-                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">4</span>
-                                <!--end::Badge-->
-                                <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Berkontribusi dalam penyusunan rekomendasi
-                                    kebijakan nasional</div>
-                                <!--end::Title-->
-                            </div>
+                            <img src="{{ asset('benefit/4.jpg') }}" class="w-100 rounded-2" alt="">
                             <!--end::Heading-->
                         </div>
                         <!--end::Story-->
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
-                            <!--begin::Illustration-->
-                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/19.png') }}"
-                                class="mh-125px mb-9" alt="" />
-                            <!--end::Illustration-->
+                        <div class="shadow-lg">
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
-                                <!--begin::Badge-->
-                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">5</span>
-                                <!--end::Badge-->
-                                <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Kesempatan belajar langsung dengan tokoh
-                                    inspiratif nasional</div>
-                                <!--end::Title-->
-                            </div>
+                            <img src="{{ asset('benefit/5.jpg') }}" class="w-100 rounded-2" alt="">
                             <!--end::Heading-->
                         </div>
                         <!--end::Story-->
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
-                            <!--begin::Illustration-->
-                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/15.png') }}"
-                                class="mh-125px mb-9" alt="" />
-                            <!--end::Illustration-->
+                        <div class="shadow-lg">
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
-                                <!--begin::Badge-->
-                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">6</span>
-                                <!--end::Badge-->
-                                <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">E-sertifikat dari KEMENPORA RI</div>
-                                <!--end::Title-->
-                            </div>
+                            <img src="{{ asset('benefit/6.jpg') }}" class="w-100 rounded-2" alt="">
                             <!--end::Heading-->
                         </div>
                         <!--end::Story-->
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
-                            <!--begin::Illustration-->
-                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/15.png') }}"
-                                class="mh-125px mb-9" alt="" />
-                            <!--end::Illustration-->
+                        <div class="shadow-lg">
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
-                                <!--begin::Badge-->
-                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">6</span>
-                                <!--end::Badge-->
-                                <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Transportasi dari meeting point (Bandara
-                                    Sultan Hasanuddin & Rujab Walikota Makassar) ke lokasi kegiatan</div>
-                                <!--end::Title-->
-                            </div>
+                            <img src="{{ asset('benefit/7.jpg') }}" class="w-100 rounded-2" alt="">
                             <!--end::Heading-->
                         </div>
                         <!--end::Story-->
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
-                            <!--begin::Illustration-->
-                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/15.png') }}"
-                                class="mh-125px mb-9" alt="" />
-                            <!--end::Illustration-->
+                        <div class="shadow-lg">
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
-                                <!--begin::Badge-->
-                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">6</span>
-                                <!--end::Badge-->
-                                <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Konsumsi dan tempat tinggal selama kegiatan
-                                </div>
-                                <!--end::Title-->
-                            </div>
+                            <img src="{{ asset('benefit/8.jpg') }}" class="w-100 rounded-2" alt="">
                             <!--end::Heading-->
                         </div>
                         <!--end::Story-->
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
-                            <!--begin::Illustration-->
-                            <img src="{{ asset('admin/assets/media/illustrations/sketchy-1/15.png') }}"
-                                class="mh-125px mb-9" alt="" />
-                            <!--end::Illustration-->
+                        <div class="shadow-lg">
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
-                                <!--begin::Badge-->
-                                <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">6</span>
-                                <!--end::Badge-->
-                                <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Seminar Kit</div>
-                                <!--end::Title-->
-                            </div>
+                            <img src="{{ asset('benefit/9.jpg') }}" class="w-100 rounded-2" alt="">
                             <!--end::Heading-->
                         </div>
                         <!--end::Story-->
@@ -608,7 +506,7 @@
                         data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1">
                         <!--begin::Item-->
                         <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-                            <img src="{{ asset('no_image.jpg') }}" class="card-rounded shadow mw-100"
+                            <img src="{{ asset('benefit/flayer.jpg') }}" class="card-rounded shadow mw-100"
                                 alt="" />
                         </div>
                         <!--end::Item-->
@@ -1756,8 +1654,8 @@
                 <!--begin::Heading-->
                 <div class="text-center mb-17">
                     <!--begin::Title-->
-                    {{-- <h3 class="fs-2hx text-dark mb-5" id="clients" data-kt-scroll-offset="{default: 125, lg: 150}">
-                        ANNOUNCEMENT</h3> --}}
+                    <h3 class="fs-2hx text-dark mb-5" id="clients" data-kt-scroll-offset="{default: 125, lg: 150}">
+                        ANNOUNCEMENT</h3>
                     <!--end::Title-->
                 </div>
                 <!--end::Heading-->
@@ -1956,7 +1854,7 @@
                     <!--begin::Link-->
                     <button data-bs-toggle="modal" data-bs-target="#kt_modal_1"
                         class="btn btn-lg btn-outline border-2 btn-outline-danger flex-shrink-0 my-2">
-                        Daftar</button>
+                        Download Document</button>
                     <!--end::Link-->
                 </div>
                 <!--end::Highlight-->
