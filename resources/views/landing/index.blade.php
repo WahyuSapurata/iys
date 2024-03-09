@@ -18,7 +18,7 @@
     <meta property="og:url" content="https://keenthemes.com/metronic" />
     <meta property="og:site_name" content="Keenthemes | Metronic" />
     <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-    <link rel="shortcut icon" href="{{ asset('logo_kemenpora.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('iys.png') }}" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -303,7 +303,7 @@
                     </div>
                     <!--end::Heading-->
                     <!--begin::Clients-->
-                    <div class="d-flex flex-center flex-wrap position-relative px-5 our-partner"
+                    {{-- <div class="d-flex flex-center flex-wrap position-relative px-5 our-partner"
                         style="margin-top: 260px">
                         <!--begin::Client-->
                         <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
@@ -355,7 +355,7 @@
                                 class="mh-30px mh-lg-40px" alt="" />
                         </div>
                         <!--end::Client-->
-                    </div>
+                    </div> --}}
                     <!--end::Clients-->
                 </div>
                 <!--end::Landing hero-->
@@ -364,7 +364,7 @@
         </div>
         <!--end::Header Section-->
         <!--begin::How It Works Section-->
-        <div class="mb-n10 mb-lg-n20 z-index-2" style="margin-top: 100px">
+        <div class="mb-n10 mb-lg-n20 z-index-2" style="margin-top: 220px">
             <!--begin::Container-->
             <div class="container">
                 <!--begin::Heading-->
@@ -570,7 +570,7 @@
                     <div class="text-center mt-15 mb-18" id="achievements"
                         data-kt-scroll-offset="{default: 100, lg: 150}">
                         <!--begin::Title-->
-                        <h3 class="fs-2hx text-white fw-bold mb-5">EVENT SCHEDULE</h3>
+                        <h3 class="fs-2hx text-white mb-5">EVENT SCHEDULE</h3>
                         <!--end::Title-->
                     </div>
                     <!--end::Heading-->
@@ -674,8 +674,8 @@
                 <!--begin::Heading-->
                 <div class="text-center mb-12">
                     <!--begin::Title-->
-                    <h3 class="fs-2hx text-dark mb-5" id="team" data-kt-scroll-offset="{default: 100, lg: 150}">
-                        EVENT</h3>
+                    {{-- <h3 class="fs-2hx text-dark mb-5" id="team" data-kt-scroll-offset="{default: 100, lg: 150}">
+                        EVENT</h3> --}}
                     <!--end::Title-->
                     <!--begin::Sub-title-->
                     <div class="fs-5 text-muted fw-bold" style="padding: 0 100px; text-align: justify">
@@ -1203,7 +1203,7 @@
                     <div class="d-flex flex-column container pt-lg-20">
                         <!--begin::Heading-->
                         <div class="mb-13 text-center">
-                            <h1 class="fs-2hx fw-bold text-white mb-5" id="pricing"
+                            <h1 class="fs-2hx text-white mb-5" id="pricing"
                                 data-kt-scroll-offset="{default: 100, lg: 150}">ABOUT</h1>
                         </div>
                         <!--end::Heading-->
@@ -1215,12 +1215,14 @@
                                 <div class="col-md-6">
                                     <div class="d-flex h-100">
                                         <!--begin::Option-->
-                                        <div class="w-100 d-flex flex-column rounded-3 py-20 px-10"
-                                            style="background-color: #ffffffa1 !important; background-image: linear-gradient(160deg, #fe3e3d, transparent);">
+                                        <div class="w-100 d-flex flex-column rounded-3 py-10 px-10"
+                                            style="background-color: #fff !important;">
                                             <!--begin::Heading-->
                                             <div class="mb-7 text-center">
+                                                <img src="{{ asset('event.png') }}" width="75px" alt="">
                                                 <!--begin::Title-->
-                                                <h1 class="text-white mb-5 fw-boldest">Event Pillars</h1>
+                                                <h1 class="mb-5 fw-boldest">Event Pillars
+                                                </h1>
                                                 <!--end::Title-->
                                             </div>
                                             <!--end::Heading-->
@@ -1229,7 +1231,7 @@
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1240,15 +1242,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Forum
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Forum
                                                         Session</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1259,15 +1260,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Commision
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Commision
                                                         Meeting</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1278,15 +1278,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Sidang
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Sidang
                                                         Pemuda</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1297,15 +1296,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Isnpiring
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Inspiring
                                                         Talks</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1316,15 +1314,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Bilateral
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Bilateral
                                                         Forum</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1335,15 +1332,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Social
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Social
                                                         Night</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1354,15 +1350,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Treasure
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Treasure
                                                         Hunt</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1374,7 +1369,7 @@
                                                     </span>
                                                     <!--end::Svg Icon-->
                                                     <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Entertaintment</span>
+                                                        class="fw-semibold fs-6 opacity-75 text-start pe-3">Entertaintment</span>
                                                 </div>
                                                 <!--end::Item-->
                                             </div>
@@ -1388,12 +1383,14 @@
                                 <div class="col-md-6">
                                     <div class="d-flex h-100">
                                         <!--begin::Option-->
-                                        <div class="w-100 d-flex flex-column rounded-3 py-20 px-10"
-                                            style="background-color: #ffffffa1 !important; background-image: linear-gradient(160deg, #fe3e3d, transparent);">
+                                        <div class="w-100 d-flex flex-column rounded-3 py-10 px-10"
+                                            style="background-color: #fff !important;">
                                             <!--begin::Heading-->
                                             <div class="mb-7 text-center">
+                                                <img src="{{ asset('terms_and_conditions.png') }}" width="75px"
+                                                    alt="">
                                                 <!--begin::Title-->
-                                                <h1 class="text-white mb-5 fw-boldest">Syarat dan Ketentuan Peserta
+                                                <h1 class="mb-5 fw-boldest">Syarat dan Ketentuan Peserta
                                                 </h1>
                                                 <!--end::Title-->
                                             </div>
@@ -1403,7 +1400,7 @@
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1414,15 +1411,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">WNI
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">WNI
                                                         (Warga Negara Indonesia)</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1433,15 +1429,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Usia
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Usia
                                                         Pemuda 17-30 Tahun dibuktikan dengan KTP/KK</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1453,14 +1448,14 @@
                                                     </span>
                                                     <!--end::Svg Icon-->
                                                     <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Melampirkan
+                                                        class="fw-semibold fs-6 opacity-75 text-start pe-3">Melampirkan
                                                         CV</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1472,7 +1467,7 @@
                                                     </span>
                                                     <!--end::Svg Icon-->
                                                     <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Melampirkan
+                                                        class="fw-semibold fs-6 opacity-75 text-start pe-3">Melampirkan
                                                         Desk (PowerPoint) rekomendasi kebijakan awal, yang sesuai dengan
                                                         ketentuan yang ditetapkan pada guidebook</span>
                                                 </div>
@@ -1480,7 +1475,7 @@
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1491,8 +1486,7 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Memiliki
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Memiliki
                                                         pengetahuan yang cukup tentang agenda Pembangunan daerah asal
                                                         masing-masing</span>
                                                 </div>
@@ -1500,7 +1494,7 @@
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1511,8 +1505,7 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Memiliki
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Memiliki
                                                         ide/gagasan yang inovatif untuk agenda pembangunan nasional
                                                         menuju Indonesia Emas 2045</span>
                                                 </div>
@@ -1520,7 +1513,7 @@
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1531,15 +1524,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Memiliki
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Memiliki
                                                         akun sosial media (Instagram) yang aktif</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1550,8 +1542,7 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Bersedia
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Bersedia
                                                         menghadiri kegiatan Indonesia Youth Summit 2024 secara offline
                                                         di Kota Makassar</span>
                                                 </div>
@@ -1559,7 +1550,7 @@
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1571,7 +1562,7 @@
                                                     </span>
                                                     <!--end::Svg Icon-->
                                                     <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Berkomitmen
+                                                        class="fw-semibold fs-6 opacity-75 text-start pe-3">Berkomitmen
                                                         untuk aktif terlibat dalam penyusunan ’Suara Pemuda
                                                         Indonesia’</span>
                                                 </div>
@@ -1579,7 +1570,7 @@
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1590,15 +1581,14 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Sehat
+                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Sehat
                                                         jasmani dan rohani</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
                                                 <div class="d-flex gap-4 mb-5">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
                                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect opacity="0.3" x="2" y="2" width="20"
@@ -1610,7 +1600,7 @@
                                                     </span>
                                                     <!--end::Svg Icon-->
                                                     <span
-                                                        class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Pendaftaran
+                                                        class="fw-semibold fs-6 opacity-75 text-start pe-3">Pendaftaran
                                                         tidak dipungut biaya</span>
                                                 </div>
                                                 <!--end::Item-->
@@ -1654,188 +1644,45 @@
                 <!--begin::Heading-->
                 <div class="text-center mb-17">
                     <!--begin::Title-->
-                    <h3 class="fs-2hx text-dark mb-5" id="clients" data-kt-scroll-offset="{default: 125, lg: 150}">
-                        ANNOUNCEMENT</h3>
+                    <h3 class="fs-2hx text-dark mb-10 text-uppercase" id="clients"
+                        data-kt-scroll-offset="{default: 125, lg: 150}">
+                        Initiated with the support of</h3>
+                    <div class="d-flex justify-content-center gap-10">
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('pemkot.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                    </div>
                     <!--end::Title-->
                 </div>
                 <!--end::Heading-->
-                <!--begin::Row-->
-                {{-- <div class="row g-lg-10 mb-10 mb-lg-20">
-                    <!--begin::Col-->
-                    <div class="col-lg-4">
-                        <!--begin::Testimonial-->
-                        <div
-                            class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
-                            <!--begin::Wrapper-->
-                            <div class="mb-7">
-                                <!--begin::Rating-->
-                                <div class="rating mb-6">
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                </div>
-                                <!--end::Rating-->
-                                <!--begin::Title-->
-                                <div class="fs-2 fw-bold text-dark mb-3">This is by far the cleanest template
-                                    <br />and the most well structured
-                                </div>
-                                <!--end::Title-->
-                                <!--begin::Feedback-->
-                                <div class="text-gray-500 fw-semibold fs-4">The most well thought out design theme I
-                                    have ever used. The codes are up to tandard. The css styles are very clean. In fact
-                                    the cleanest and the most up to standard I have ever seen.</div>
-                                <!--end::Feedback-->
-                            </div>
-                            <!--end::Wrapper-->
-                            <!--begin::Author-->
-                            <div class="d-flex align-items-center">
-                                <!--begin::Avatar-->
-                                <div class="symbol symbol-circle symbol-50px me-5">
-                                    <img src="assets/media/avatars/300-1.jpg" class="" alt="" />
-                                </div>
-                                <!--end::Avatar-->
-                                <!--begin::Name-->
-                                <div class="flex-grow-1">
-                                    <a href="#" class="text-dark fw-bold text-hover-primary fs-6">Paul Miles</a>
-                                    <span class="text-muted d-block fw-bold">Development Lead</span>
-                                </div>
-                                <!--end::Name-->
-                            </div>
-                            <!--end::Author-->
-                        </div>
-                        <!--end::Testimonial-->
+                <!--begin::Heading-->
+                <div class="text-center mb-17">
+                    <!--begin::Title-->
+                    <h3 class="fs-2hx text-dark mb-10 text-uppercase" id="clients"
+                        data-kt-scroll-offset="{default: 125, lg: 150}">
+                        Powered by</h3>
+                    <div class="d-flex justify-content-center gap-10">
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('Logo_dispora.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('logo_muda..png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
                     </div>
-                    <!--end::Col-->
-                    <!--begin::Col-->
-                    <div class="col-lg-4">
-                        <!--begin::Testimonial-->
-                        <div
-                            class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
-                            <!--begin::Wrapper-->
-                            <div class="mb-7">
-                                <!--begin::Rating-->
-                                <div class="rating mb-6">
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                </div>
-                                <!--end::Rating-->
-                                <!--begin::Title-->
-                                <div class="fs-2 fw-bold text-dark mb-3">This is by far the cleanest template
-                                    <br />and the most well structured
-                                </div>
-                                <!--end::Title-->
-                                <!--begin::Feedback-->
-                                <div class="text-gray-500 fw-semibold fs-4">The most well thought out design theme I
-                                    have ever used. The codes are up to tandard. The css styles are very clean. In fact
-                                    the cleanest and the most up to standard I have ever seen.</div>
-                                <!--end::Feedback-->
-                            </div>
-                            <!--end::Wrapper-->
-                            <!--begin::Author-->
-                            <div class="d-flex align-items-center">
-                                <!--begin::Avatar-->
-                                <div class="symbol symbol-circle symbol-50px me-5">
-                                    <img src="assets/media/avatars/300-2.jpg" class="" alt="" />
-                                </div>
-                                <!--end::Avatar-->
-                                <!--begin::Name-->
-                                <div class="flex-grow-1">
-                                    <a href="#" class="text-dark fw-bold text-hover-primary fs-6">Janya
-                                        Clebert</a>
-                                    <span class="text-muted d-block fw-bold">Development Lead</span>
-                                </div>
-                                <!--end::Name-->
-                            </div>
-                            <!--end::Author-->
-                        </div>
-                        <!--end::Testimonial-->
-                    </div>
-                    <!--end::Col-->
-                    <!--begin::Col-->
-                    <div class="col-lg-4">
-                        <!--begin::Testimonial-->
-                        <div
-                            class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
-                            <!--begin::Wrapper-->
-                            <div class="mb-7">
-                                <!--begin::Rating-->
-                                <div class="rating mb-6">
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                    <div class="rating-label me-2 checked">
-                                        <i class="bi bi-star-fill fs-5"></i>
-                                    </div>
-                                </div>
-                                <!--end::Rating-->
-                                <!--begin::Title-->
-                                <div class="fs-2 fw-bold text-dark mb-3">This is by far the cleanest template
-                                    <br />and the most well structured
-                                </div>
-                                <!--end::Title-->
-                                <!--begin::Feedback-->
-                                <div class="text-gray-500 fw-semibold fs-4">The most well thought out design theme I
-                                    have ever used. The codes are up to tandard. The css styles are very clean. In fact
-                                    the cleanest and the most up to standard I have ever seen.</div>
-                                <!--end::Feedback-->
-                            </div>
-                            <!--end::Wrapper-->
-                            <!--begin::Author-->
-                            <div class="d-flex align-items-center">
-                                <!--begin::Avatar-->
-                                <div class="symbol symbol-circle symbol-50px me-5">
-                                    <img src="assets/media/avatars/300-16.jpg" class="" alt="" />
-                                </div>
-                                <!--end::Avatar-->
-                                <!--begin::Name-->
-                                <div class="flex-grow-1">
-                                    <a href="#" class="text-dark fw-bold text-hover-primary fs-6">Steave
-                                        Brown</a>
-                                    <span class="text-muted d-block fw-bold">Development Lead</span>
-                                </div>
-                                <!--end::Name-->
-                            </div>
-                            <!--end::Author-->
-                        </div>
-                        <!--end::Testimonial-->
-                    </div>
-                    <!--end::Col-->
-                </div> --}}
-                <!--end::Row-->
+                    <!--end::Title-->
+                </div>
+                <!--end::Heading-->
                 <!--begin::Highlight-->
                 <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13"
                     style="background: linear-gradient(90deg, #fe1a19 0%, #fff9f9 100%);">
@@ -1967,82 +1814,56 @@
                 <div class="container">
                     <!--begin::Wrapper-->
                     <div class="d-flex flex-column flex-md-row justify-content-between py-7 py-lg-10">
-                        <!--begin::Copyright-->
-                        <div class="order-2 order-md-1">
+                        <!--begin::Links-->
+                        <div class="d-flex fw-semibold flex-column me-20">
                             <!--begin::Subtitle-->
-                            <h4 class="fw-bold text-gray-400 mb-6">Powered by</h4>
+                            <h4 class="fw-bold text-gray-400 mb-6">Contact</h4>
                             <!--end::Subtitle-->
-                            <div class="d-flex gap-5">
-                                <!--begin::Logo-->
-                                <a href="">
-                                    <img alt="Logo" src="{{ asset('Logo_dispora.png') }}"
-                                        class="h-60px h-md-65px" />
-                                </a>
-                                <!--end::Logo image-->
-                                <!--begin::Logo-->
-                                <a href="">
-                                    <img alt="Logo" src="{{ asset('logo_muda..png') }}"
-                                        class="h-60px h-md-65px" />
-                                </a>
-                                <!--end::Logo image-->
-                            </div>
+                            <!--begin::Link-->
+                            <a href="" class="mb-6">
+                                <img src="admin/assets/media/svg/brand-logos/ebay.svg" class="h-20px me-2"
+                                    alt="" />
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
+                                    indonesianyouthsummitiys@gmail.com</span>
+                            </a>
+                            <!--end::Link-->
+                            <!--begin::Link-->
+                            <a href="https://www.instagram.com/indonesiayouthsummit/" target="_blank" class="mb-6">
+                                <img src="admin/assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2"
+                                    alt="" />
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
+                                    @indonesiayouthsummit</span>
+                            </a>
+                            <!--end::Link-->
+                            <!--begin::Link-->
+                            <a href="https://api.whatsapp.com/send?phone=6289517468703" target="_blank"
+                                class="mb-6">
+                                <img src="admin/assets/media/svg/brand-logos/whatsapp.svg" class="h-20px me-2"
+                                    alt="" />
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Whatsapp :
+                                    089517468703</span>
+                            </a>
+                            <!--end::Link-->
                         </div>
-                        <!--end::Copyright-->
-                        <!--begin::Navs-->
-                        <div class="d-flex justify-content-center">
-                            <!--begin::Links-->
-                            <div class="d-flex fw-semibold flex-column me-20">
-                                <!--begin::Subtitle-->
-                                <h4 class="fw-bold text-gray-400 mb-6">Contatc</h4>
-                                <!--end::Subtitle-->
-                                <!--begin::Link-->
-                                <a href="" class="mb-6">
-                                    <img src="admin/assets/media/svg/brand-logos/ebay.svg" class="h-20px me-2"
-                                        alt="" />
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
-                                        indonesianyouthsummitiys@gmail.com</span>
-                                </a>
-                                <!--end::Link-->
-                                <!--begin::Link-->
-                                <a href="https://www.instagram.com/indonesiayouthsummit/" target="_blank"
-                                    class="mb-6">
-                                    <img src="admin/assets/media/svg/brand-logos/instagram-2-1.svg"
-                                        class="h-20px me-2" alt="" />
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
-                                        @indonesiayouthsummit</span>
-                                </a>
-                                <!--end::Link-->
-                                <!--begin::Link-->
-                                <a href="https://api.whatsapp.com/send?phone=6289517468703" target="_blank"
-                                    class="mb-6">
-                                    <img src="admin/assets/media/svg/brand-logos/whatsapp.svg" class="h-20px me-2"
-                                        alt="" />
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Whatsapp :
-                                        089517468703</span>
-                                </a>
-                                <!--end::Link-->
-                            </div>
-                            <!--end::Links-->
-                            <!--begin::Links-->
-                            <div class="d-flex fw-semibold flex-column ms-lg-20">
-                                <!--begin::Subtitle-->
-                                <h4 class="fw-bold text-gray-400 mb-6">Helps</h4>
-                                <!--end::Subtitle-->
-                                <!--begin::Link-->
-                                <a href="https://www.facebook.com/keenthemes" class="mb-6">
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Help
-                                        Center</span>
-                                </a>
-                                <!--end::Link-->
-                                <!--begin::Link-->
-                                <a href="https://github.com/KeenthemesHub" class="mb-6">
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</span>
-                                </a>
-                                <!--end::Link-->
-                            </div>
-                            <!--end::Links-->
+                        <!--end::Links-->
+                        <!--begin::Links-->
+                        <div class="d-flex fw-semibold flex-column ms-lg-20">
+                            <!--begin::Subtitle-->
+                            <h4 class="fw-bold text-gray-400 mb-6">Helps</h4>
+                            <!--end::Subtitle-->
+                            <!--begin::Link-->
+                            <a href="https://www.facebook.com/keenthemes" class="mb-6">
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Help
+                                    Center</span>
+                            </a>
+                            <!--end::Link-->
+                            <!--begin::Link-->
+                            <a href="https://github.com/KeenthemesHub" class="mb-6">
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</span>
+                            </a>
+                            <!--end::Link-->
                         </div>
-                        <!--end::Navs-->
+                        <!--end::Links-->
                     </div>
                     <!--end::Wrapper-->
                 </div>

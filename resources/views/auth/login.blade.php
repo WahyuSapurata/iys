@@ -4,7 +4,7 @@
 
 <head>
     <base href="../../../">
-    <link rel="shortcut icon" href="{{ asset('logo_kemenpora.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('iys.png') }}" />
     <title>{{ config('app.name') }} | Login</title>
     <meta charset="utf-8" />
     <meta name="description"

@@ -13,7 +13,7 @@
     <meta name="keywords" content="Kemiskinan, perencanaan,monitoring, evaluasi" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" href="{{ asset('logo_kemenpora.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('iys.png') }}" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,10 +53,8 @@
                     <div class="app-sidebar-logo d-flex align-items-center flex-grow-1 flex-lg-grow-0"
                         id="kt_app_sidebar_logo">
                         <a href="" class="full-logo">
-                            <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
-                                class="w-45px app-sidebar-logo-default" />
-                            <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
-                                class="w-40px app-sidebar-logo-minimize" />
+                            <img alt="Logo" src="{{ asset('iys.png') }}" class="w-45px app-sidebar-logo-default" />
+                            <img alt="Logo" src="{{ asset('iys.png') }}" class="w-40px app-sidebar-logo-minimize" />
                         </a>
                     </div>
 
