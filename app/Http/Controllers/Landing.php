@@ -18,4 +18,9 @@ class Landing extends BaseController
         $data_event = Event::where('uuid', $params)->first();
         return view('landing.detail', compact('data_event'));
     }
+
+    public function index_2024()
+    {
+        return view('landing.index2024');
+    }
 }

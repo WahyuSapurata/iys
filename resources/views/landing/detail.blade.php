@@ -302,61 +302,6 @@
                         <!--end::Action-->
                     </div>
                     <!--end::Heading-->
-                    <!--begin::Clients-->
-                    <div class="d-flex flex-center flex-wrap position-relative px-5 our-partner"
-                        style="margin-top: 260px">
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/fujifilm.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Vodafone">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/vodafone.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip"
-                            title="KPMG International">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/kpmg.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Nasa">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/nasa.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Aspnetzero">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/aspnetzero.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip"
-                            title="AON - Empower Results">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/aon.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Hewlett-Packard">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/hp-3.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/truman.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                    </div>
-                    <!--end::Clients-->
                 </div>
                 <!--end::Landing hero-->
             </div>
@@ -364,7 +309,7 @@
         </div>
         <!--end::Header Section-->
         <!--begin::How It Works Section-->
-        <div class="mb-n10 mb-lg-n20 z-index-2" style="margin-top: 100px">
+        <div class="mb-n10 mb-lg-n20 z-index-2" style="margin-top: 220px">
             <!--begin::Container-->
             <div class="container">
                 <!--begin::Heading-->
@@ -776,82 +721,56 @@
                 <div class="container">
                     <!--begin::Wrapper-->
                     <div class="d-flex flex-column flex-md-row justify-content-between py-7 py-lg-10">
-                        <!--begin::Copyright-->
-                        <div class="order-2 order-md-1">
+                        <!--begin::Links-->
+                        <div class="d-flex fw-semibold flex-column me-20">
                             <!--begin::Subtitle-->
-                            <h4 class="fw-bold text-gray-400 mb-6">Powered by</h4>
+                            <h4 class="fw-bold text-gray-400 mb-6">Contact</h4>
                             <!--end::Subtitle-->
-                            <div class="d-flex gap-5">
-                                <!--begin::Logo-->
-                                <a href="">
-                                    <img alt="Logo" src="{{ asset('Logo_dispora.png') }}"
-                                        class="h-60px h-md-65px" />
-                                </a>
-                                <!--end::Logo image-->
-                                <!--begin::Logo-->
-                                <a href="">
-                                    <img alt="Logo" src="{{ asset('logo_muda..png') }}"
-                                        class="h-60px h-md-65px" />
-                                </a>
-                                <!--end::Logo image-->
-                            </div>
+                            <!--begin::Link-->
+                            <a href="" class="mb-6">
+                                <img src="{{ asset('admin/assets/media/svg/brand-logos/ebay.svg') }}"
+                                    class="h-20px me-2" alt="" />
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
+                                    indonesianyouthsummitiys@gmail.com</span>
+                            </a>
+                            <!--end::Link-->
+                            <!--begin::Link-->
+                            <a href="https://www.instagram.com/indonesiayouthsummit/" target="_blank" class="mb-6">
+                                <img src="{{ asset('admin/assets/media/svg/brand-logos/instagram-2-1.svg') }}"
+                                    class="h-20px me-2" alt="" />
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
+                                    @indonesiayouthsummit</span>
+                            </a>
+                            <!--end::Link-->
+                            <!--begin::Link-->
+                            <a href="https://api.whatsapp.com/send?phone=6289517468703" target="_blank"
+                                class="mb-6">
+                                <img src="{{ asset('admin/assets/media/svg/brand-logos/whatsapp.svg') }}"
+                                    class="h-20px me-2" alt="" />
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Whatsapp :
+                                    +6289517468703</span>
+                            </a>
+                            <!--end::Link-->
                         </div>
-                        <!--end::Copyright-->
-                        <!--begin::Navs-->
-                        <div class="d-flex justify-content-center">
-                            <!--begin::Links-->
-                            <div class="d-flex fw-semibold flex-column me-20">
-                                <!--begin::Subtitle-->
-                                <h4 class="fw-bold text-gray-400 mb-6">Contatc</h4>
-                                <!--end::Subtitle-->
-                                <!--begin::Link-->
-                                <a href="" class="mb-6">
-                                    <img src="admin/assets/media/svg/brand-logos/ebay.svg" class="h-20px me-2"
-                                        alt="" />
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">E-mail :
-                                        indonesianyouthsummitiys@gmail.com</span>
-                                </a>
-                                <!--end::Link-->
-                                <!--begin::Link-->
-                                <a href="https://www.instagram.com/indonesiayouthsummit/" target="_blank"
-                                    class="mb-6">
-                                    <img src="admin/assets/media/svg/brand-logos/instagram-2-1.svg"
-                                        class="h-20px me-2" alt="" />
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram :
-                                        @indonesiayouthsummit</span>
-                                </a>
-                                <!--end::Link-->
-                                <!--begin::Link-->
-                                <a href="https://api.whatsapp.com/send?phone=6289517468703" target="_blank"
-                                    class="mb-6">
-                                    <img src="admin/assets/media/svg/brand-logos/whatsapp.svg" class="h-20px me-2"
-                                        alt="" />
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Whatsapp :
-                                        089517468703</span>
-                                </a>
-                                <!--end::Link-->
-                            </div>
-                            <!--end::Links-->
-                            <!--begin::Links-->
-                            <div class="d-flex fw-semibold flex-column ms-lg-20">
-                                <!--begin::Subtitle-->
-                                <h4 class="fw-bold text-gray-400 mb-6">Helps</h4>
-                                <!--end::Subtitle-->
-                                <!--begin::Link-->
-                                <a href="https://www.facebook.com/keenthemes" class="mb-6">
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Help
-                                        Center</span>
-                                </a>
-                                <!--end::Link-->
-                                <!--begin::Link-->
-                                <a href="https://github.com/KeenthemesHub" class="mb-6">
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</span>
-                                </a>
-                                <!--end::Link-->
-                            </div>
-                            <!--end::Links-->
+                        <!--end::Links-->
+                        <!--begin::Links-->
+                        <div class="d-flex fw-semibold flex-column ms-lg-20">
+                            <!--begin::Subtitle-->
+                            <h4 class="fw-bold text-gray-400 mb-6">Helps</h4>
+                            <!--end::Subtitle-->
+                            <!--begin::Link-->
+                            <a href="https://www.facebook.com/keenthemes" class="mb-6">
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Help
+                                    Center</span>
+                            </a>
+                            <!--end::Link-->
+                            <!--begin::Link-->
+                            <a href="https://github.com/KeenthemesHub" class="mb-6">
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</span>
+                            </a>
+                            <!--end::Link-->
                         </div>
-                        <!--end::Navs-->
+                        <!--end::Links-->
                     </div>
                     <!--end::Wrapper-->
                 </div>

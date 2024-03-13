@@ -17,6 +17,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'Dashboard@index')->name('home.index');
 
     Route::get('/', 'Landing@index')->name('landing');
+    Route::get('/landing2023', 'Landing@index_2024')->name('landing2023');
     Route::get('/landing-detail/{uuid}', 'Landing@detail')->name('landing-detail');
 
     Route::post('/register', 'RegisterController@store')->name('register');
