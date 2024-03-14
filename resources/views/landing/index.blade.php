@@ -1265,6 +1265,27 @@
                     <!--end::Title-->
                 </div>
                 <!--end::Heading-->
+                <!--begin::Heading-->
+                <div class="text-center mb-17">
+                    <!--begin::Title-->
+                    <h3 class="fs-2hx text-dark mb-10 text-uppercase" id="clients"
+                        data-kt-scroll-offset="{default: 125, lg: 150}">
+                        in collaboration with</h3>
+                    <div class="d-flex justify-content-center gap-10">
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('binar.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('pemimpin.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                    </div>
+                    <!--end::Title-->
+                </div>
+                <!--end::Heading-->
                 <!--begin::Highlight-->
                 <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13"
                     style="background: linear-gradient(90deg, #fe1a19 0%, #fff9f9 100%);">
