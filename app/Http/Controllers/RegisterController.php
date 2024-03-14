@@ -7,7 +7,7 @@ use App\Http\Requests\UpdateRegisterRequest;
 use App\Models\Register;
 use Illuminate\Support\Facades\Session;
 
-class RegisterController extends Controller
+class RegisterController extends BaseController
 {
     public function store(StoreRegisterRequest $storeRegisterRequest)
     {

@@ -160,7 +160,6 @@
                                         <form action="{{ route('register') }}" method="POST" class="form-data"
                                             enctype="multipart/form-data">
                                             @csrf
-                                            @method('POST')
                                             <div class="mb-10">
                                                 <label for="nama" class="form-label">Nama</label>
                                                 <input class="form-control" type="text" name="nama"
