@@ -4,7 +4,7 @@
 
 <head>
     <base href="">
-    <title>{{ config('app.name') }} | IYS 2023</title>
+    <title>{{ config('app.name') }} | YCC 2023</title>
     <meta charset="utf-8" />
     <meta name="description"
         content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Blazor, Django, Flask &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
@@ -112,7 +112,7 @@
                                         <!--end::Menu item-->
                                         <!--begin::Toolbar-->
                                         <div class="flex-equal ms-15">
-                                            <button class="btn btn-danger">Guide Book - Download</button>
+                                            <button class="btn btn-danger">Daftar</button>
                                         </div>
 
                                         <div class="d-flex ms-10" style="align-items: center; gap: 10px">
@@ -189,7 +189,7 @@
                 <div class="row w-100 gy-10 mb-md-20 mt-3 justify-content-center" style="padding: 0 100px;">
                     <h3 class="fs-2hx text-dark text-center" id="how-it-works"
                         data-kt-scroll-offset="{default: 100, lg: 150}">
-                        DOKUMENTASI IYS 2023</h3>
+                        DOKUMENTASI YCC 2023</h3>
                     <!--begin::Col-->
                     <div class="col-md-3">
                         <!--begin::Story-->
@@ -324,89 +324,6 @@
             <!--end::Curve top-->
             <!--begin::Wrapper-->
             <div class="pt-20" style="background-image: linear-gradient(to top, #080808cc, #fe4646)">
-                <!--begin::Container-->
-                <div class="container">
-                    <!--begin::Heading-->
-                    <div class="text-center mb-5">
-                        <!--begin::Title-->
-                        <h3 class="fs-2hx text-white mt-10" id="clients"
-                            data-kt-scroll-offset="{default: 125, lg: 150}">
-                            VENUE</h3>
-                        <!--end::Title-->
-                    </div>
-                    <!--end::Heading-->
-                    <!--begin::Row-->
-                    <div class="py-5 py-lg-10">
-                        <!--begin::Col-->
-                        <div class="mb-10 mb-lg-0">
-                            <!--begin::Block-->
-                            <div class="rounded landing-dark-border p-9 mb-10 embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7899906801363!2d119.5751664739799!3d-5.137486594839698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee520c8652ae3%3A0x42f4f41d03bb871b!2sTokka%20Tena%20Rata!5e0!3m2!1sid!2sid!4v1709790655010!5m2!1sid!2sid"
-                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                            <!--end::Block-->
-                        </div>
-                        <style>
-                            .embed-responsive {
-                                position: relative;
-                                display: block;
-                                width: 100%;
-                                height: 55vh;
-                                padding: 0;
-                                overflow: hidden;
-                            }
-
-                            .embed-responsive::before {
-                                content: "";
-                                display: block;
-                                padding-top: 56.25%;
-                                /* 16:9 aspect ratio */
-                            }
-
-                            .embed-responsive .embed-responsive-item,
-                            .embed-responsive iframe,
-                            .embed-responsive embed,
-                            .embed-responsive object,
-                            .embed-responsive video {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                bottom: 0;
-                                width: 100%;
-                                height: 100%;
-                                border: 0;
-                            }
-                        </style>
-                        <!--end::Col-->
-                    </div>
-                    <!--end::Row-->
-                    <!--begin::Heading-->
-                    <div class="text-center d-flex justify-content-center mb-17"
-                        style="align-items: center; gap: 20px">
-                        <!--begin::Title-->
-                        <svg id="svg_maps" class="mb-5" height="3em" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <style>
-                                #svg_maps {
-                                    fill: #dd3b1e
-                                }
-                            </style>
-                            <path
-                                d="M320 64A64 64 0 1 0 192 64a64 64 0 1 0 128 0zm-96 96c-35.3 0-64 28.7-64 64v48c0 17.7 14.3 32 32 32h1.8l11.1 99.5c1.8 16.2 15.5 28.5 31.8 28.5h38.7c16.3 0 30-12.3 31.8-28.5L318.2 304H320c17.7 0 32-14.3 32-32V224c0-35.3-28.7-64-64-64H224zM132.3 394.2c13-2.4 21.7-14.9 19.3-27.9s-14.9-21.7-27.9-19.3c-32.4 5.9-60.9 14.2-82 24.8c-10.5 5.3-20.3 11.7-27.8 19.6C6.4 399.5 0 410.5 0 424c0 21.4 15.5 36.1 29.1 45c14.7 9.6 34.3 17.3 56.4 23.4C130.2 504.7 190.4 512 256 512s125.8-7.3 170.4-19.6c22.1-6.1 41.8-13.8 56.4-23.4c13.7-8.9 29.1-23.6 29.1-45c0-13.5-6.4-24.5-14-32.6c-7.5-7.9-17.3-14.3-27.8-19.6c-21-10.6-49.5-18.9-82-24.8c-13-2.4-25.5 6.3-27.9 19.3s6.3 25.5 19.3 27.9c30.2 5.5 53.7 12.8 69 20.5c3.2 1.6 5.8 3.1 7.9 4.5c3.6 2.4 3.6 7.2 0 9.6c-8.8 5.7-23.1 11.8-43 17.3C374.3 457 318.5 464 256 464s-118.3-7-157.7-17.9c-19.9-5.5-34.2-11.6-43-17.3c-3.6-2.4-3.6-7.2 0-9.6c2.1-1.4 4.8-2.9 7.9-4.5c15.3-7.7 38.8-14.9 69-20.5z" />
-                        </svg>
-                        <h3 class="fs-2hx text-white mb-5" id="clients"
-                            data-kt-scroll-offset="{default: 125, lg: 150}">
-                            Tokka Tena Rata</h3>
-                        <!--end::Title-->
-                    </div>
-                    <!--end::Heading-->
-                </div>
-                <!--end::Container-->
-                <!--begin::Separator-->
-                <div class="landing-dark-separator"></div>
-                <!--end::Separator-->
                 <!--begin::Container-->
                 <div class="container">
                     <!--begin::Wrapper-->

@@ -585,7 +585,7 @@
                                 <div class="text-dark text-center fw-semibold fs-6">Open
                                     Registration &
                                     Submit PPT <br>
-                                    <span class="text-danger fw-bolder">05 Maret – 13
+                                    <span class="text-danger fw-bolder">14 Maret – 13
                                         Mei 2024</span>
                                 </div>
                                 <!--end::Label-->
