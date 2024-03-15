@@ -40,8 +40,10 @@
             <!--begin::Wrapper-->
             <div class="position-relative">
                 <div class="position-absolute w-100 z-index-n2">
-                    <img src="{{ asset('cover_landing.jpg') }}" class="w-100 backgriund-landing" style="height: 100vh"
-                        alt="">
+                    <img src="{{ asset('cover_landing.jpg') }}" class="w-100 backgriund-landing d-none d-md-block"
+                        style="height: 100vh" alt="">
+                    <img src="{{ asset('cover_mobile.jpg') }}" class="w-100 backgriund-landing d-block d-md-none"
+                        style="height: 100vh" alt="">
                     <img src="{{ asset('logo_muda..png') }}" class="w-100px position-absolute bottom-0 end-0"
                         style="background-color: #fff; border-top-left-radius: 30px" alt="">
                 </div>

@@ -404,7 +404,7 @@ th[rowspan] {
     }
 
     .content-deskripsi {
-        margin-top: 445px !important;
+        margin-top: 500px !important;
     }
 
     .content-subdeskripsi {
@@ -436,9 +436,9 @@ th[rowspan] {
         height: 200px;
     }
 
-    .backgriund-landing {
+    /* .backgriund-landing {
         height: 90vh !important;
-    }
+    } */
 
 }
 
