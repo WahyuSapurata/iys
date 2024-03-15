@@ -436,6 +436,10 @@ th[rowspan] {
         height: 200px;
     }
 
+    .backgriund-landing {
+        height: 90vh !important;
+    }
+
 }
 
 .select2-results__options {
