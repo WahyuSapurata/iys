@@ -23,6 +23,7 @@ class Pendaftar extends BaseController
 
     public function store(StoreRegisterRequest $storeRegisterRequest)
     {
+        dd($storeRegisterRequest->all());
         $newKtp = '';
         $newCv = '';
         $newPpt = '';

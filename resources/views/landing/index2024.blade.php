@@ -25,6 +25,7 @@
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="{{ asset('admin/assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin/assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/assets/css/style.css') }}" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
@@ -73,9 +74,9 @@
                                 <!--begin::Logo image-->
                                 <a href="../../demo1/dist/landing.html">
                                     <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
-                                        class="logo-default h-25px h-lg-65px" />
+                                        class="logo-default h-45px h-lg-65px" />
                                     <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
-                                        class="logo-sticky h-20px h-lg-60px" />
+                                        class="logo-sticky h-40px h-lg-60px" />
                                 </a>
                                 <!--end::Logo image-->
                             </div>
@@ -95,7 +96,7 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link active py-3 px-4 px-xxl-6"
+                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6"
                                                 href="{{ route('landing2023') }}" data-kt-scroll-toggle="true"
                                                 data-kt-drawer-dismiss="true">2023</a>
                                             <!--end::Menu link-->
@@ -104,18 +105,19 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6"
+                                            <a class="menu-link nav-link active py-3 px-4 px-xxl-6"
                                                 href="{{ route('landing') }}" data-kt-scroll-toggle="true"
                                                 data-kt-drawer-dismiss="true">2024</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
                                         <!--begin::Toolbar-->
-                                        <div class="flex-equal ms-15">
-                                            <button class="btn btn-danger">Daftar</button>
+                                        <div class="flex-equal ms-md-15">
+                                            <button class="btn btn-danger" data-bs-toggle="modal"
+                                                data-bs-target="#kt_modal_1">Daftar</button>
                                         </div>
 
-                                        <div class="d-flex ms-10" style="align-items: center; gap: 10px">
+                                        <div class="d-grid d-md-flex ms-md-10" style="align-items: center; gap: 10px">
                                             <img src="{{ asset('pemkot.png') }}" class="h-60px" alt="">
                                             <img src="{{ asset('Logo_dispora.png') }}" class="h-60px"
                                                 alt="">
@@ -137,7 +139,7 @@
         </div>
         <!--end::Header Section-->
         <!--begin::How It Works Section-->
-        <div class="z-index-2" style="margin-top: 645px">
+        <div class="z-index-2 content-deskripsi-pamflet" style="margin-top: 645px">
             <!--begin::Container-->
             <div class="container">
                 <!--begin::Product slider-->
@@ -186,7 +188,7 @@
                 </div>
                 <!--end::Product slider-->
                 <!--begin::Row-->
-                <div class="row w-100 gy-10 mb-md-20 mt-3 justify-content-center" style="padding: 0 100px;">
+                <div class="row w-100 gy-10 mb-md-20 mt-3 justify-content-center content-benefit">
                     <h3 class="fs-2hx text-dark text-center" id="how-it-works"
                         data-kt-scroll-offset="{default: 100, lg: 150}">
                         DOKUMENTASI YCC 2023</h3>

@@ -26,9 +26,9 @@ return new class extends Migration
             $table->text('motivasi');
             $table->string('riwayat_penyakit');
             $table->string('ukuran');
-            $table->string('file_ktp');
-            $table->string('file_cv');
-            $table->string('file_ppt');
+            $table->string('file_ktp')->nullable();
+            $table->string('file_cv')->nullable();
+            $table->string('file_ppt')->nullable();
             $table->timestamps();
         });
     }

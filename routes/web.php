@@ -20,7 +20,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/landing2023', 'Landing@index_2024')->name('landing2023');
     Route::get('/landing-detail/{uuid}', 'Landing@detail')->name('landing-detail');
 
-    Route::post('/register', 'Pendaftar@store')->name('register');
+    Route::post('/registrasi-user', 'Pendaftar@store')->name('registrasi-user');
 
     Route::group(['prefix' => 'login', 'middleware' => ['guest'], 'as' => 'login.'], function () {
         Route::get('/login-akun', 'Auth@show')->name('login-akun');

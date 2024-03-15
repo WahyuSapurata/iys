@@ -34,9 +34,9 @@ class StoreRegisterRequest extends FormRequest
             'motivasi' => 'required',
             'riwayat_penyakit' => 'required',
             'ukuran' => 'required',
-            'file_ktp' => 'required',
-            'file_cv' => 'required',
-            'file_ppt' => 'required',
+            // 'file_ktp' => 'required',
+            // 'file_cv' => 'required',
+            // 'file_ppt' => 'required',
         ];
     }
 
@@ -55,9 +55,9 @@ class StoreRegisterRequest extends FormRequest
             'motivasi.required' => 'Kolom motivasi harus di isi.',
             'riwayat_penyakit.required' => 'Kolom riwayat penyakit harus di isi.',
             'ukuran.required' => 'Kolom ukuran t-shirt di isi.',
-            'file_ktp.required' => 'Kolom file ktp harus di isi.',
-            'file_cv.required' => 'Kolom file cv harus di isi.',
-            'file_ppt.required' => 'Kolom file ppt harus di isi.',
+            // 'file_ktp.required' => 'Kolom file ktp harus di isi.',
+            // 'file_cv.required' => 'Kolom file cv harus di isi.',
+            // 'file_ppt.required' => 'Kolom file ppt harus di isi.',
         ];
     }
 }

@@ -25,6 +25,7 @@
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="{{ asset('admin/assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin/assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/assets/css/style.css') }}" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
@@ -73,9 +74,9 @@
                                 <!--begin::Logo image-->
                                 <a href="../../demo1/dist/landing.html">
                                     <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
-                                        class="logo-default h-25px h-lg-65px" />
+                                        class="logo-default h-45px h-lg-65px" />
                                     <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
-                                        class="logo-sticky h-20px h-lg-60px" />
+                                        class="logo-sticky h-40px h-lg-60px" />
                                 </a>
                                 <!--end::Logo image-->
                             </div>
@@ -95,8 +96,9 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href=""
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">2023</a>
+                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6"
+                                                href="{{ route('landing2023') }}" data-kt-scroll-toggle="true"
+                                                data-kt-drawer-dismiss="true">2023</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
@@ -110,12 +112,12 @@
                                         </div>
                                         <!--end::Menu item-->
                                         <!--begin::Toolbar-->
-                                        <div class="flex-equal ms-15">
+                                        <div class="flex-equal ms-md-15">
                                             <button class="btn btn-danger" data-bs-toggle="modal"
                                                 data-bs-target="#kt_modal_1">Daftar</button>
                                         </div>
 
-                                        <div class="d-flex ms-10" style="align-items: center; gap: 10px">
+                                        <div class="d-grid d-md-flex ms-md-10" style="align-items: center; gap: 10px">
                                             <img src="{{ asset('pemkot.png') }}" class="h-60px" alt="">
                                             <img src="{{ asset('Logo_dispora.png') }}" class="h-60px"
                                                 alt="">
@@ -156,8 +158,8 @@
                                     </div>
 
                                     <div class="modal-body text-start">
-                                        <form action="{{ route('register') }}" method="POST" class="form-data"
-                                            enctype="multipart/form-data">
+                                        <form action="{{ route('registrasi-user') }}" method="POST"
+                                            class="form-data" enctype="multipart/form-data">
                                             @csrf
                                             @method('POST')
                                             <div class="mb-10">
@@ -309,7 +311,7 @@
         </div>
         <!--end::Header Section-->
         <!--begin::How It Works Section-->
-        <div class="mb-n10 mb-lg-n20 z-index-2" style="margin-top: 220px">
+        <div class="mb-n10 mb-lg-n20 z-index-2 content-deskripsi" style="margin-top: 220px">
             <!--begin::Container-->
             <div class="container">
                 <!--begin::Heading-->
@@ -391,7 +393,7 @@
                     <!--begin::Item-->
                     <div class="text-center mb-15 px-5 pt-5 pt-lg-10 px-lg-10">
                         @if ($data_event->link_youtube)
-                            <iframe class="card-rounded shadow" width="550" height="400"
+                            <iframe class="card-rounded shadow video-detail"
                                 src="https://www.youtube.com/embed/{{ $data_event->link_youtube }}" frameborder="0"
                                 allowfullscreen></iframe>
                         @else
