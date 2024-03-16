@@ -44,8 +44,12 @@
                         style="height: 100vh" alt="">
                     <img src="{{ asset('cover_mobile.jpg') }}" class="w-100 backgriund-landing d-block d-md-none"
                         style="height: 100vh" alt="">
-                    <img src="{{ asset('logo_muda..png') }}" class="w-100px position-absolute bottom-0 end-0"
-                        style="background-color: #fff; border-top-left-radius: 30px" alt="">
+                    <div class="position-absolute bottom-0 end-0"
+                        style="background-color: #fff; border-top-left-radius: 30px">
+                        <img src="{{ asset('logo_muda..png') }}" class="w-80px" alt="">
+                        <img src="{{ asset('binar.png') }}" class="w-60px" alt="">
+                        <img src="{{ asset('pemimpin.png') }}" class="w-80px" alt="">
+                    </div>
                 </div>
                 <!--begin::Header-->
                 <div class="landing-header" style="background-color: #27010191" data-kt-sticky="true"

@@ -25,6 +25,7 @@
     <!--end::Fonts-->
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="{{ asset('admin/assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/assets/plugins/custom/jquery-ui/jquery-ui.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin/assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('admin/assets/css/style.css') }}" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
@@ -45,8 +46,12 @@
                         style="height: 100vh" alt="">
                     <img src="{{ asset('cover_mobile.jpg') }}" class="w-100 backgriund-landing d-block d-md-none"
                         style="height: 100vh" alt="">
-                    <img src="{{ asset('logo_muda..png') }}" class="w-100px position-absolute bottom-0 end-0"
-                        style="background-color: #fff; border-top-left-radius: 30px" alt="">
+                    <div class="position-absolute bottom-0 end-0"
+                        style="background-color: #fff; border-top-left-radius: 30px">
+                        <img src="{{ asset('logo_muda..png') }}" class="w-80px" alt="">
+                        <img src="{{ asset('binar.png') }}" class="w-60px" alt="">
+                        <img src="{{ asset('pemimpin.png') }}" class="w-80px" alt="">
+                    </div>
                 </div>
                 <!--begin::Header-->
                 <div class="landing-header" style="background-color: #27010191" data-kt-sticky="true"
@@ -311,62 +316,6 @@
 
                         <!--end::Action-->
                     </div>
-                    <!--end::Heading-->
-                    <!--begin::Clients-->
-                    {{-- <div class="d-flex flex-center flex-wrap position-relative px-5 our-partner"
-                        style="margin-top: 260px">
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/fujifilm.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Vodafone">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/vodafone.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip"
-                            title="KPMG International">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/kpmg.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Nasa">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/nasa.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Aspnetzero">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/aspnetzero.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip"
-                            title="AON - Empower Results">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/aon.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Hewlett-Packard">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/hp-3.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
-                            <img src="{{ asset('admin/assets/media/svg/brand-logos/truman.svg') }}"
-                                class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                    </div> --}}
-                    <!--end::Clients-->
                 </div>
                 <!--end::Landing hero-->
             </div>
@@ -381,9 +330,7 @@
                 <div class="text-center mb-17">
                     <!--begin::Title-->
                     <h3 class="fs-2hx text-dark" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">
-                        Konferensi Pemuda Terbesar Se-Indonesia</h3>
-                    <h4 class="text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">
-                        Indonesia Youth Summit</h4>
+                        Indonesia Youth Summit</h3>
                     <!--end::Title-->
                     <!--begin::Text-->
                     <div class="content-subdeskripsi">
@@ -1530,15 +1477,17 @@
     </script>
     <!--begin::Global Javascript Bundle(used by all pages)-->
     <script src="{{ asset('admin/assets/plugins/global/plugins.bundle.js') }}"></script>
+    <script src="{{ asset('admin/assets/plugins/custom/jquery-ui/jquery-ui.js') }}"></script>
     <script src="{{ asset('admin/assets/js/scripts.bundle.js') }}"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Vendors Javascript(used by this page)-->
     <script src="{{ asset('admin/assets/plugins/custom/fslightbox/fslightbox.bundle.js') }}"></script>
-    <script src="assets/plugins/custom/typedjs/typedjs.bundle.js"></script>
+    <script src="{{ asset('admin/assets/plugins/custom/typedjs/typedjs.bundle.js') }}"></script>
     <!--end::Vendors Javascript-->
     <!--begin::Custom Javascript(used by this page)-->
     <script src="{{ asset('admin/assets/js/custom/landing.js') }}"></script>
-    <script src="{{ asset('admin/assets/js/custom/pages/pricing/general.js') }}"></script>
+    <script src="{{ asset('admin/assets/js/custom/modals/create-app.js') }}"></script>
+    <script src="{{ asset('admin/assets/js/custom/modals/upgrade-plan.js') }}"></script>
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
 
