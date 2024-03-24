@@ -448,9 +448,6 @@
     <!--end::Javascript-->
 
     <script>
-        $(".kt_datepicker_1").flatpickr({
-            dateFormat: "d-m-Y",
-        });
         document.addEventListener("DOMContentLoaded", () => {
             @if (Session::has('status'))
                 Swal.fire({

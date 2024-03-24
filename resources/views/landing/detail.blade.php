@@ -170,28 +170,29 @@
                                             @csrf
                                             @method('POST')
                                             <div class="mb-10">
-                                                <label for="nama" class="form-label">Nama</label>
+                                                <label class="form-label">Nama</label>
                                                 <input class="form-control" type="text" name="nama"
                                                     id="nama">
                                                 <small class="text-danger nama_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="email" class="form-label">Email</label>
+                                                <label class="form-label">Email</label>
                                                 <input class="form-control" type="email" name="email"
                                                     id="email">
                                                 <small class="text-danger email_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="asal" class="form-label">Asal Kota/Kabupaten</label>
+                                                <label class="form-label">Asal
+                                                    Kota/Kabupaten</label>
                                                 <input class="form-control" type="text" name="asal"
                                                     id="asal">
                                                 <small class="text-danger asal_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="asal" class="form-label">Jenis Kelamin</label>
+                                                <label class="form-label">Jenis Kelamin</label>
                                                 <select name="jenis_kelamin" class="form-select"
                                                     data-placeholder="Pilih jenis kelamin">
                                                     <option></option>
@@ -202,48 +203,49 @@
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-                                                <input class="form-control kt_datepicker_1" type="text"
-                                                    name="tanggal_lahir" id="tanggal_lahir">
+                                                <label class="form-label">Tanggal
+                                                    Lahir</label>
+                                                <input class="form-control" type="date" name="tanggal_lahir"
+                                                    id="tanggal_lahir">
                                                 <small class="text-danger tanggal_lahir_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="no_telp" class="form-label">No Telp</label>
+                                                <label class="form-label">No Telp</label>
                                                 <input class="form-control" type="text" name="no_telp"
                                                     id="no_telp">
                                                 <small class="text-danger no_telp_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="akun_sosmed" class="form-label">Akun Sosmed</label>
+                                                <label class="form-label">Akun Sosmed</label>
                                                 <input class="form-control" type="text" name="akun_sosmed"
                                                     id="akun_sosmed">
                                                 <small class="text-danger akun_sosmed_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="profesi" class="form-label">Profesi</label>
+                                                <label class="form-label">Profesi</label>
                                                 <input class="form-control" type="text" name="profesi"
                                                     id="profesi">
                                                 <small class="text-danger profesi_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="instansi" class="form-label">Instansi</label>
+                                                <label class="form-label">Instansi</label>
                                                 <input class="form-control" type="text" name="instansi"
                                                     id="instansi">
                                                 <small class="text-danger instansi_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="motivasi" class="form-label">Motivasi</label>
+                                                <label class="form-label">Motivasi</label>
                                                 <textarea id="motivasi" name="motivasi" class="form-control" data-kt-autosize="true"></textarea>
                                                 <small class="text-danger motivasi_error"></small>
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="riwayat_penyakit" class="form-label">Riwayat
+                                                <label class="form-label">Riwayat
                                                     Penyakit</label>
                                                 <input class="form-control" type="text" name="riwayat_penyakit"
                                                     id="riwayat_penyakit">
@@ -251,7 +253,7 @@
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="ukuran" class="form-label">⁠Ukuran T-Shirt
+                                                <label class="form-label">⁠Ukuran T-Shirt
                                                     (S-M-L-XL)</label>
                                                 <select name="ukuran" class="form-select"
                                                     data-placeholder="Pilih jenis ukuran">
@@ -265,7 +267,7 @@
                                             </div>
 
                                             <div class="mb-10">
-                                                <label for="file_ktp" class="form-label">KTP <span
+                                                <label class="form-label">File Data Diri<span
                                                         style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
                                                         bentuk file pdf)</span></label>
                                                 <input class="form-control" accept=".pdf" type="file"
@@ -273,22 +275,22 @@
                                                 <small class="text-danger file_ktp_error"></small>
                                             </div>
 
-                                            <div class="mb-10">
-                                                <label for="file_cv" class="form-label">CV <span
-                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
-                                                        bentuk file pdf)</span></label>
-                                                <input class="form-control" accept=".pdf" type="file"
-                                                    name="file_cv" id="file_cv">
-                                                <small class="text-danger file_cv_error"></small>
-                                            </div>
+                                            {{-- <div class="mb-10">
+                                                    <label for="file_cv" class="form-label">CV <span
+                                                            style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
+                                                            bentuk file pdf)</span></label>
+                                                    <input class="form-control" accept=".pdf" type="file"
+                                                        name="file_cv" id="file_cv">
+                                                    <small class="text-danger file_cv_error"></small>
+                                                </div>
 
-                                            <div class="mb-10">
-                                                <label for="file_ppt" class="form-label">Desk
-                                                    (PowerPoint)</label>
-                                                <input class="form-control" accept=".pptx, .ppt" type="file"
-                                                    name="file_ppt" id="file_ppt">
-                                                <small class="text-danger file_ppt_error"></small>
-                                            </div>
+                                                <div class="mb-10">
+                                                    <label for="file_ppt" class="form-label">Desk
+                                                        (PowerPoint)</label>
+                                                    <input class="form-control" accept=".pptx, .ppt" type="file"
+                                                        name="file_ppt" id="file_ppt">
+                                                    <small class="text-danger file_ppt_error"></small>
+                                                </div> --}}
 
 
                                             <div class="separator separator-dashed mt-8 mb-5"></div>
@@ -840,9 +842,6 @@
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
     <script>
-        $(".kt_datepicker_1").flatpickr({
-            dateFormat: "d-m-Y",
-        });
         document.addEventListener("DOMContentLoaded", () => {
             @if (Session::has('status'))
                 Swal.fire({
