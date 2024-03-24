@@ -23,32 +23,31 @@ class Pendaftar extends BaseController
 
     public function store(StoreRegisterRequest $storeRegisterRequest)
     {
-        dd($storeRegisterRequest->all());
         $newKtp = '';
-        $newCv = '';
-        $newPpt = '';
+        // $newCv = '';
+        // $newPpt = '';
         if ($storeRegisterRequest->file('file_ktp')) {
             $extension = $storeRegisterRequest->file('file_ktp')->extension();
             $newKtp = $storeRegisterRequest->nama . '-' . now()->timestamp . 'ktp' . '.' . $extension;
             $storeRegisterRequest->file('file_ktp')->storeAs('register', $newKtp);
         }
 
-        if ($storeRegisterRequest->file('file_cv')) {
-            $extension = $storeRegisterRequest->file('file_cv')->extension();
-            $newCv = $storeRegisterRequest->nama . '-' . now()->timestamp . 'cv' . '.' . $extension;
-            $storeRegisterRequest->file('file_cv')->storeAs('register', $newCv);
-        }
+        // if ($storeRegisterRequest->file('file_cv')) {
+        //     $extension = $storeRegisterRequest->file('file_cv')->extension();
+        //     $newCv = $storeRegisterRequest->nama . '-' . now()->timestamp . 'cv' . '.' . $extension;
+        //     $storeRegisterRequest->file('file_cv')->storeAs('register', $newCv);
+        // }
 
-        if ($storeRegisterRequest->file('file_ppt')) {
-            $extension = $storeRegisterRequest->file('file_ppt')->extension();
-            $newPpt = $storeRegisterRequest->nama . '-' . now()->timestamp . 'ppt' . '.' . $extension;
-            $storeRegisterRequest->file('file_ppt')->storeAs('register', $newPpt);
-        }
+        // if ($storeRegisterRequest->file('file_ppt')) {
+        //     $extension = $storeRegisterRequest->file('file_ppt')->extension();
+        //     $newPpt = $storeRegisterRequest->nama . '-' . now()->timestamp . 'ppt' . '.' . $extension;
+        //     $storeRegisterRequest->file('file_ppt')->storeAs('register', $newPpt);
+        // }
 
         $data = $storeRegisterRequest->all();
         $data['file_ktp'] = $newKtp;
-        $data['file_cv'] = $newCv;
-        $data['file_ppt'] = $newPpt;
+        // $data['file_cv'] = $newCv;
+        // $data['file_ppt'] = $newPpt;
         $register = Register::create($data);
 
         if ($register) {

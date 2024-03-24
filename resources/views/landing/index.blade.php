@@ -167,118 +167,117 @@
                                     </div>
 
                                     <div class="modal-body text-start">
-                                        <div class="modal-body text-start">
-                                            <form action="{{ route('registrasi-user') }}" method="POST"
-                                                class="form-data" enctype="multipart/form-data">
-                                                @csrf
-                                                @method('POST')
-                                                <div class="mb-10">
-                                                    <label for="nama" class="form-label">Nama</label>
-                                                    <input class="form-control" type="text" name="nama"
-                                                        id="nama">
-                                                    <small class="text-danger nama_error"></small>
-                                                </div>
+                                        <form action="{{ route('registrasi-user') }}" method="POST"
+                                            class="form-data" enctype="multipart/form-data">
+                                            @csrf
+                                            @method('POST')
+                                            <div class="mb-10">
+                                                <label for="nama" class="form-label">Nama</label>
+                                                <input class="form-control" type="text" name="nama"
+                                                    id="nama">
+                                                <small class="text-danger nama_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="email" class="form-label">Email</label>
-                                                    <input class="form-control" type="email" name="email"
-                                                        id="email">
-                                                    <small class="text-danger email_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input class="form-control" type="email" name="email"
+                                                    id="email">
+                                                <small class="text-danger email_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="asal" class="form-label">Asal
-                                                        Kota/Kabupaten</label>
-                                                    <input class="form-control" type="text" name="asal"
-                                                        id="asal">
-                                                    <small class="text-danger asal_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="asal" class="form-label">Asal
+                                                    Kota/Kabupaten</label>
+                                                <input class="form-control" type="text" name="asal"
+                                                    id="asal">
+                                                <small class="text-danger asal_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="asal" class="form-label">Jenis Kelamin</label>
-                                                    <select name="jenis_kelamin" class="form-select"
-                                                        data-placeholder="Pilih jenis kelamin">
-                                                        <option></option>
-                                                        <option value="laki-laki">Laki - laki</option>
-                                                        <option value="perempuan">Perempuan</option>
-                                                    </select>
-                                                    <small class="text-danger asal_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="asal" class="form-label">Jenis Kelamin</label>
+                                                <select name="jenis_kelamin" class="form-select"
+                                                    data-placeholder="Pilih jenis kelamin">
+                                                    <option></option>
+                                                    <option value="laki-laki">Laki - laki</option>
+                                                    <option value="perempuan">Perempuan</option>
+                                                </select>
+                                                <small class="text-danger asal_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="tanggal_lahir" class="form-label">Tanggal
-                                                        Lahir</label>
-                                                    <input class="form-control kt_datepicker_1" type="text"
-                                                        name="tanggal_lahir" id="tanggal_lahir">
-                                                    <small class="text-danger tanggal_lahir_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="tanggal_lahir" class="form-label">Tanggal
+                                                    Lahir</label>
+                                                <input class="form-control kt_datepicker_1" type="text"
+                                                    name="tanggal_lahir" id="tanggal_lahir">
+                                                <small class="text-danger tanggal_lahir_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="no_telp" class="form-label">No Telp</label>
-                                                    <input class="form-control" type="text" name="no_telp"
-                                                        id="no_telp">
-                                                    <small class="text-danger no_telp_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="no_telp" class="form-label">No Telp</label>
+                                                <input class="form-control" type="text" name="no_telp"
+                                                    id="no_telp">
+                                                <small class="text-danger no_telp_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="akun_sosmed" class="form-label">Akun Sosmed</label>
-                                                    <input class="form-control" type="text" name="akun_sosmed"
-                                                        id="akun_sosmed">
-                                                    <small class="text-danger akun_sosmed_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="akun_sosmed" class="form-label">Akun Sosmed</label>
+                                                <input class="form-control" type="text" name="akun_sosmed"
+                                                    id="akun_sosmed">
+                                                <small class="text-danger akun_sosmed_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="profesi" class="form-label">Profesi</label>
-                                                    <input class="form-control" type="text" name="profesi"
-                                                        id="profesi">
-                                                    <small class="text-danger profesi_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="profesi" class="form-label">Profesi</label>
+                                                <input class="form-control" type="text" name="profesi"
+                                                    id="profesi">
+                                                <small class="text-danger profesi_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="instansi" class="form-label">Instansi</label>
-                                                    <input class="form-control" type="text" name="instansi"
-                                                        id="instansi">
-                                                    <small class="text-danger instansi_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="instansi" class="form-label">Instansi</label>
+                                                <input class="form-control" type="text" name="instansi"
+                                                    id="instansi">
+                                                <small class="text-danger instansi_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="motivasi" class="form-label">Motivasi</label>
-                                                    <textarea id="motivasi" name="motivasi" class="form-control" data-kt-autosize="true"></textarea>
-                                                    <small class="text-danger motivasi_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="motivasi" class="form-label">Motivasi</label>
+                                                <textarea id="motivasi" name="motivasi" class="form-control" data-kt-autosize="true"></textarea>
+                                                <small class="text-danger motivasi_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="riwayat_penyakit" class="form-label">Riwayat
-                                                        Penyakit</label>
-                                                    <input class="form-control" type="text"
-                                                        name="riwayat_penyakit" id="riwayat_penyakit">
-                                                    <small class="text-danger riwayat_penyakit_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="riwayat_penyakit" class="form-label">Riwayat
+                                                    Penyakit</label>
+                                                <input class="form-control" type="text" name="riwayat_penyakit"
+                                                    id="riwayat_penyakit">
+                                                <small class="text-danger riwayat_penyakit_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="ukuran" class="form-label">⁠Ukuran T-Shirt
-                                                        (S-M-L-XL)</label>
-                                                    <select name="ukuran" class="form-select"
-                                                        data-placeholder="Pilih jenis ukuran">
-                                                        <option></option>
-                                                        <option value="s">S</option>
-                                                        <option value="m">M</option>
-                                                        <option value="l">L</option>
-                                                        <option value="xl">XL</option>
-                                                    </select>
-                                                    <small class="text-danger ukuran_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="ukuran" class="form-label">⁠Ukuran T-Shirt
+                                                    (S-M-L-XL)</label>
+                                                <select name="ukuran" class="form-select"
+                                                    data-placeholder="Pilih jenis ukuran">
+                                                    <option></option>
+                                                    <option value="s">S</option>
+                                                    <option value="m">M</option>
+                                                    <option value="l">L</option>
+                                                    <option value="xl">XL</option>
+                                                </select>
+                                                <small class="text-danger ukuran_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="file_ktp" class="form-label">KTP <span
-                                                            style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
-                                                            bentuk file pdf)</span></label>
-                                                    <input class="form-control" accept=".pdf" type="file"
-                                                        name="file_ktp" id="file_ktp">
-                                                    <small class="text-danger file_ktp_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="file_ktp" class="form-label">File Data Diri<span
+                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
+                                                        bentuk file pdf)</span></label>
+                                                <input class="form-control" accept=".pdf" type="file"
+                                                    name="file_ktp" id="file_ktp">
+                                                <small class="text-danger file_ktp_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
+                                            {{-- <div class="mb-10">
                                                     <label for="file_cv" class="form-label">CV <span
                                                             style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
                                                             bentuk file pdf)</span></label>
@@ -293,22 +292,21 @@
                                                     <input class="form-control" accept=".pptx, .ppt" type="file"
                                                         name="file_ppt" id="file_ppt">
                                                     <small class="text-danger file_ppt_error"></small>
-                                                </div>
+                                                </div> --}}
 
 
-                                                <div class="separator separator-dashed mt-8 mb-5"></div>
-                                                <div class="d-flex gap-5">
-                                                    <button type="submit"
-                                                        class="btn btn-primary btn-sm btn-submit-import d-flex align-items-center"><i
-                                                            class="bi bi-file-earmark-diff"></i> Simpan</button>
-                                                    <button type="reset" data-bs-dismiss="modal"
-                                                        class="btn mr-2 btn-light btn-sm d-flex align-items-center"
-                                                        style="background-color: #ea443e65; color: #EA443E"><i
-                                                            class="bi bi-trash-fill"
-                                                            style="color: #EA443E"></i>Batal</button>
-                                                </div>
-                                            </form>
-                                        </div>
+                                            <div class="separator separator-dashed mt-8 mb-5"></div>
+                                            <div class="d-flex gap-5">
+                                                <button type="submit"
+                                                    class="btn btn-primary btn-sm btn-submit-import d-flex align-items-center"><i
+                                                        class="bi bi-file-earmark-diff"></i> Simpan</button>
+                                                <button type="reset" data-bs-dismiss="modal"
+                                                    class="btn mr-2 btn-light btn-sm d-flex align-items-center"
+                                                    style="background-color: #ea443e65; color: #EA443E"><i
+                                                        class="bi bi-trash-fill"
+                                                        style="color: #EA443E"></i>Batal</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
