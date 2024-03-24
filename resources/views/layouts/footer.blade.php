@@ -4,8 +4,7 @@
         <!--begin::Copyright-->
         <div class="text-dark order-2 order-md-1">
             <span class="text-muted fw-bold me-1">Created By</span>
-            <a href="https://portfolio-projectreact.web.app/" target="_blank"
-                class="text-primary text-hover-primary">Sapurata Creative</a>
+            <a href="https://makkareso.id" target="_blank" class="text-primary text-hover-primary">Makkareso.id</a>
         </div>
         <!--end::Copyright-->
     </div>
