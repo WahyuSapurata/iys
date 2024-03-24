@@ -268,7 +268,8 @@
 
                                             <div class="mb-10">
                                                 <label class="form-label">File Data Diri<span
-                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
+                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(KTP,
+                                                        CV, PPT dalam
                                                         bentuk file pdf)</span></label>
                                                 <input class="form-control" accept=".pdf" type="file"
                                                     name="file_ktp" id="file_ktp">
