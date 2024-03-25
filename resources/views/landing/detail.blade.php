@@ -267,31 +267,30 @@
                                             </div>
 
                                             <div class="mb-10">
-                                                <label class="form-label">File Data Diri<span
-                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(KTP,
-                                                        CV, PPT dalam
+                                                <label class="form-label">Foto KTP<span
+                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
                                                         bentuk file pdf)</span></label>
                                                 <input class="form-control" accept=".pdf" type="file"
                                                     name="file_ktp" id="file_ktp">
                                                 <small class="text-danger file_ktp_error"></small>
                                             </div>
 
-                                            {{-- <div class="mb-10">
-                                                    <label for="file_cv" class="form-label">CV <span
-                                                            style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
-                                                            bentuk file pdf)</span></label>
-                                                    <input class="form-control" accept=".pdf" type="file"
-                                                        name="file_cv" id="file_cv">
-                                                    <small class="text-danger file_cv_error"></small>
-                                                </div>
+                                            <div class="mb-10">
+                                                <label for="file_cv" class="form-label">CV <span
+                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
+                                                        bentuk file pdf)</span></label>
+                                                <input class="form-control" accept=".pdf" type="file"
+                                                    name="file_cv" id="file_cv">
+                                                <small class="text-danger file_cv_error"></small>
+                                            </div>
 
-                                                <div class="mb-10">
-                                                    <label for="file_ppt" class="form-label">Desk
-                                                        (PowerPoint)</label>
-                                                    <input class="form-control" accept=".pptx, .ppt" type="file"
-                                                        name="file_ppt" id="file_ppt">
-                                                    <small class="text-danger file_ppt_error"></small>
-                                                </div> --}}
+                                            <div class="mb-10">
+                                                <label for="file_ppt" class="form-label">Desk
+                                                    (PowerPoint)</label>
+                                                <input class="form-control" accept=".pptx, .ppt" type="file"
+                                                    name="file_ppt" id="file_ppt">
+                                                <small class="text-danger file_ppt_error"></small>
+                                            </div>
 
 
                                             <div class="separator separator-dashed mt-8 mb-5"></div>
