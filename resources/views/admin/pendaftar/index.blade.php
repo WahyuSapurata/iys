@@ -40,9 +40,7 @@
                                             <th>Motivasi</th>
                                             <th>Riwayat Penyakit</th>
                                             <th>⁠Ukuran T-Shirt (S-M-L-XL)</th>
-                                            <th>File KTP</th>
-                                            <th>File CV</th>
-                                            <th>File PPT</th>
+                                            <th>File Data Diri</th>
                                             {{-- <th>Aksi</th> --}}
                                         </tr>
                                     </thead>
@@ -237,32 +235,6 @@
                         className: 'text-center',
                     }, {
                         data: 'file_ktp',
-                        className: 'text-center',
-                        render: function(data, type, row, meta) {
-                            let result;
-                            result =
-                                `<a href="{{ asset('register/${data}') }}" target="_blank" class="btn btn-outline btn-outline-dashed btn-outline-danger btn-active-light-danger p-2 py-1">
-                                    <div class="d-flex justify-content-center align-items-center" style="gap: 5px; color: red;">
-                                        Lihat File
-                                    </div>
-                                </a>`;
-                            return result;
-                        }
-                    }, {
-                        data: 'file_cv',
-                        className: 'text-center',
-                        render: function(data, type, row, meta) {
-                            let result;
-                            result =
-                                `<a href="{{ asset('register/${data}') }}" target="_blank" class="btn btn-outline btn-outline-dashed btn-outline-danger btn-active-light-danger p-2 py-1">
-                                    <div class="d-flex justify-content-center align-items-center" style="gap: 5px; color: red;">
-                                        Lihat File
-                                    </div>
-                                </a>`;
-                            return result;
-                        }
-                    }, {
-                        data: 'file_ppt',
                         className: 'text-center',
                         render: function(data, type, row, meta) {
                             let result;
