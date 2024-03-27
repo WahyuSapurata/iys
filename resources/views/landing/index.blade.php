@@ -1252,12 +1252,25 @@
                     <!--end::Title-->
                 </div>
 
-                <div class="mb-17 d-flex justify-content-end align-items-center">
-                    {{-- <div class="p-4 shadow fw-bolder rounded-2" style="width: max-content">GUIDE BOOK</div> --}}
+                <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-17"
+                    style="background: linear-gradient(90deg, #fe1a19 0%, #fff9f9 100%);">
+                    <!--begin::Content-->
+                    <div class="my-2 me-5">
+                        <!--begin::Title-->
+                        <div class="fs-1 fs-lg-2qx fw-bold text-white mb-2">GUIDE BOOK
+                        </div>
+                        <!--end::Title-->
+                        <!--begin::Description-->
+                        {{-- <div class="fs-6 fs-lg-5 text-white fw-semibold opacity-75">Join over 100,000 Professionals
+                            Community to Stay Ahead</div> --}}
+                        <!--end::Description-->
+                    </div>
+                    <!--end::Content-->
+                    <!--begin::Link-->
                     <a href="{{ asset('GUIDE BOOK IYS24.pdf') }}" target="_blank"
                         class="btn btn-lg btn-danger border-2 flex-shrink-0 my-2">
-                        DOWNLOAD <br>
-                        GUIDE BOOK</a>
+                        DOWNLOAD</a>
+                    <!--end::Link-->
                 </div>
                 <!--end::Heading-->
                 <!--begin::Highlight-->
