@@ -49,6 +49,7 @@
                     <div class="position-absolute bottom-0 end-0"
                         style="background-color: #fff; border-top-left-radius: 30px">
                         <img src="{{ asset('logo_muda..png') }}" class="w-80px" alt="">
+                        <img src="{{ asset('Logo_duta_pemuda_makassar.png') }}" class="w-65px" alt="">
                         <img src="{{ asset('binar.png') }}" class="w-60px" alt="">
                         <img src="{{ asset('pemimpin.png') }}" class="w-80px" alt="">
                     </div>
@@ -1233,6 +1234,12 @@
                     <div class="d-flex justify-content-center gap-10">
                         <!--begin::Logo-->
                         <a href="">
+                            <img alt="Logo" src="{{ asset('Logo_duta_pemuda_makassar.png') }}"
+                                class="h-60px h-md-95px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
                             <img alt="Logo" src="{{ asset('binar.png') }}" class="h-60px h-md-90px" />
                         </a>
                         <!--end::Logo image-->
@@ -1247,9 +1254,10 @@
 
                 <div class="mb-17 d-flex justify-content-end align-items-center">
                     {{-- <div class="p-4 shadow fw-bolder rounded-2" style="width: max-content">GUIDE BOOK</div> --}}
-                    <button class="btn btn-lg btn-danger border-2 flex-shrink-0 my-2">
+                    <a href="{{ asset('GUIDE BOOK IYS24.pdf') }}" target="_blank"
+                        class="btn btn-lg btn-danger border-2 flex-shrink-0 my-2">
                         DOWNLOAD <br>
-                        GUIDE BOOK</button>
+                        GUIDE BOOK</a>
                 </div>
                 <!--end::Heading-->
                 <!--begin::Highlight-->
