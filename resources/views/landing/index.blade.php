@@ -540,7 +540,7 @@
                                 <div class="text-dark text-center fw-semibold fs-6">Open
                                     Registration &
                                     Submit PPT <br>
-                                    <span class="text-danger fw-bolder">14 Maret – 13
+                                    <span class="text-danger fw-bolder">28 Maret – 13
                                         Mei 2024</span>
                                 </div>
                                 <!--end::Label-->
@@ -642,7 +642,7 @@
                     <div class="fs-5 text-muted fw-bold content-eventdetail">
                         Indonesia Youth Summit menjadi kegiatan tahunan yang diselenggarakan oleh Dinas Pemuda dan
                         Olahraga Kota Makassar yang berkolaborasi dengan Muda.in. Tahun 2024, Indonesia Youth Summit
-                        mengusung tema “Pemuda dan Suara Perubahan untuk Indonesia Emas 2045”. Pelaksanaan Indonesia
+                        mengusung tema “Menuju Indonesia Emas 2045”. Pelaksanaan Indonesia
                         Youth Summit dikemas dengan konsep youth camp.
                     </div>
                     <!--end::Sub-title=-->
@@ -874,7 +874,7 @@
                                                     </span>
                                                     <!--end::Svg Icon-->
                                                     <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Social
-                                                        Night</span>
+                                                        Night Festival</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
@@ -1244,6 +1244,13 @@
                     </div>
                     <!--end::Title-->
                 </div>
+
+                <div class="mb-17 d-flex justify-content-end align-items-center">
+                    {{-- <div class="p-4 shadow fw-bolder rounded-2" style="width: max-content">GUIDE BOOK</div> --}}
+                    <button class="btn btn-lg btn-danger border-2 flex-shrink-0 my-2">
+                        DOWNLOAD <br>
+                        GUIDE BOOK</button>
+                </div>
                 <!--end::Heading-->
                 <!--begin::Highlight-->
                 <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13"
@@ -1262,7 +1269,7 @@
                     <!--end::Content-->
                     <!--begin::Link-->
                     <button data-bs-toggle="modal" data-bs-target="#kt_modal_1"
-                        class="btn btn-lg btn-outline border-2 btn-outline-danger flex-shrink-0 my-2">
+                        class="btn btn-lg btn-danger border-2 flex-shrink-0 my-2">
                         Daftar</button>
                     <!--end::Link-->
                 </div>
