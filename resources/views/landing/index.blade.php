@@ -1252,7 +1252,7 @@
                     <!--end::Title-->
                 </div>
 
-                <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-17"
+                <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-2 p-lg-6 mb-17"
                     style="background: linear-gradient(90deg, #fe1a19 0%, #fff9f9 100%);">
                     <!--begin::Content-->
                     <div class="my-2 me-5">
@@ -1274,7 +1274,7 @@
                 </div>
                 <!--end::Heading-->
                 <!--begin::Highlight-->
-                <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13"
+                <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-2 p-lg-6 mb-n5 mb-lg-n13"
                     style="background: linear-gradient(90deg, #fe1a19 0%, #fff9f9 100%);">
                     <!--begin::Content-->
                     <div class="my-2 me-5">
