@@ -22,7 +22,7 @@
                 <div class="card">
                     <div class="card-body p-0">
                         <div class="container">
-                            <div class="py-5 table-responsive">
+                            <div class="py-5 tabel-custom table-responsive">
                                 <table id="kt_table_data"
                                     class="table table-striped table-rounded border border-gray-300 table-row-bordered table-row-gray-300">
                                     <thead class="text-center">
