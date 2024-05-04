@@ -50,6 +50,7 @@
                         <img src="{{ asset('Logo_duta_pemuda_makassar.png') }}" class="w-65px" alt="">
                         <img src="{{ asset('binar.png') }}" class="w-60px" alt="">
                         <img src="{{ asset('pemimpin.png') }}" class="w-80px" alt="">
+                        <img src="{{ asset('logo_f8.png') }}" class="w-80px" alt="">
                     </div>
                 </div>
                 <!--begin::Header-->
