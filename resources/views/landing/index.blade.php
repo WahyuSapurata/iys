@@ -540,8 +540,8 @@
                                 <div class="text-dark text-center fw-semibold fs-6">Open
                                     Registration &
                                     Submit PPT <br>
-                                    <span class="text-danger fw-bolder">28 Maret – 13
-                                        Mei 2024</span>
+                                    <span class="text-danger fw-bolder">28 Maret – 10
+                                        Juli 2024</span>
                                 </div>
                                 <!--end::Label-->
                                 <div>
@@ -556,7 +556,7 @@
                                 <div class="text-dark text-center fw-semibold fs-6">Official
                                     Announcement
                                     Delegates <br>
-                                    <span class="text-danger fw-bolder">24 Mei 2024</span>
+                                    <span class="text-danger fw-bolder">15 Juli 2024</span>
                                 </div>
                                 <!--end::Label-->
                                 <div>
@@ -571,7 +571,7 @@
                                 <div class="text-dark text-center fw-semibold fs-6">Online
                                     Technical
                                     Meeting <br>
-                                    <span class="text-danger fw-bolder">26 Mei 2024</span>
+                                    <span class="text-danger fw-bolder">19 Juli 2024</span>
                                 </div>
                                 <!--end::Label-->
                                 <div>
@@ -585,7 +585,7 @@
                                 <!--begin::Label-->
                                 <div class="text-dark text-center fw-semibold fs-6" style="width: 130px">webinar
                                     (pre-summit)<br>
-                                    <span class="text-danger fw-bolder">28 Mei 2024</span>
+                                    <span class="text-danger fw-bolder">21 Mei 2024</span>
                                 </div>
                                 <!--end::Label-->
                                 <div>
@@ -599,7 +599,7 @@
                                 <!--begin::Label-->
                                 <div class="text-dark text-center fw-semibold fs-6">Indonesia
                                     Youth Summit <br>
-                                    <span class="text-danger fw-bolder">31 Mei - 01 Juni 2024</span>
+                                    <span class="text-danger fw-bolder">23 - 24 Juli 2024</span>
                                 </div>
                                 <!--end::Label-->
                             </div>
