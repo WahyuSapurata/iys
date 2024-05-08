@@ -46,11 +46,13 @@
                         style="height: 100vh" alt="">
                     <div class="position-absolute bottom-0 end-0"
                         style="background-color: #fff; border-top-left-radius: 30px">
-                        <img src="{{ asset('logo_muda..png') }}" class="w-80px" alt="">
-                        <img src="{{ asset('Logo_duta_pemuda_makassar.png') }}" class="w-65px" alt="">
-                        <img src="{{ asset('binar.png') }}" class="w-60px" alt="">
-                        <img src="{{ asset('pemimpin.png') }}" class="w-80px" alt="">
-                        <img src="{{ asset('logo_f8.png') }}" class="w-80px" alt="">
+                        <img src="{{ asset('logo_muda..png') }}" class="w-35px w-md-80px" alt="">
+                        <img src="{{ asset('Logo_duta_pemuda_makassar.png') }}" class="w-35px w-md-65px"
+                            alt="">
+                        <img src="{{ asset('logo_explore.png') }}" class="w-50px w-md-125px" alt="">
+                        <img src="{{ asset('binar.png') }}" class="w-35px w-md-60px" alt="">
+                        <img src="{{ asset('pemimpin.png') }}" class="w-35px w-md-80px" alt="">
+                        <img src="{{ asset('logo_f8.png') }}" class="w-35px w-md-80px" alt="">
                     </div>
                 </div>
                 <!--begin::Header-->
@@ -82,10 +84,18 @@
                                 <!--end::Mobile menu toggle-->
                                 <!--begin::Logo image-->
                                 <a href="../../demo1/dist/landing.html">
-                                    <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
-                                        class="logo-default h-45px h-lg-65px" />
-                                    <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
-                                        class="logo-sticky h-40px h-lg-60px" />
+                                    <div class="d-flex">
+                                        <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
+                                            class="logo-default h-45px h-lg-65px" />
+                                        <img alt="Logo" src="{{ asset('logo_kemenkraf.png') }}"
+                                            class="logo-default h-45px h-lg-65px" />
+                                    </div>
+                                    <div class="d-flex">
+                                        <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
+                                            class="logo-sticky h-40px h-lg-60px" />
+                                        <img alt="Logo" src="{{ asset('logo_kemenkraf.png') }}"
+                                            class="logo-sticky h-40px h-lg-60px" />
+                                    </div>
                                 </a>
                                 <!--end::Logo image-->
                             </div>
