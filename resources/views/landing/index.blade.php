@@ -595,7 +595,7 @@
                                 <!--begin::Label-->
                                 <div class="text-dark text-center fw-semibold fs-6" style="width: 130px">webinar
                                     (pre-summit)<br>
-                                    <span class="text-danger fw-bolder">21 Mei 2024</span>
+                                    <span class="text-danger fw-bolder">21 Juli 2024</span>
                                 </div>
                                 <!--end::Label-->
                                 <div>
