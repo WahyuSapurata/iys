@@ -6,6 +6,7 @@ use App\Http\Requests\StoreRegisterRequest;
 use App\Models\Register;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 
 class Pendaftar extends BaseController
 {
@@ -23,6 +24,16 @@ class Pendaftar extends BaseController
 
     public function store(StoreRegisterRequest $storeRegisterRequest)
     {
+        // $validator = Validator::make($storeRegisterRequest->all(), [
+        //     'file_ktp' => 'required|max:1048',
+        //     'file_cv' => 'required|max:1048',
+        //     'file_ppt' => 'required|max:1048',
+        // ]);
+        // if ($validator) {
+        //     Session::flash('status', 'warning');
+        //     Session::flash('message', 'file melebihi 1 mb');
+        // }
+
         $newKtp = '';
         $newCv = '';
         $newPpt = '';

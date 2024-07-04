@@ -88,11 +88,15 @@
                                             class="logo-default h-45px h-lg-65px" />
                                         <img alt="Logo" src="{{ asset('logo_kemenkraf.png') }}"
                                             class="logo-default h-45px h-lg-65px" />
+                                        <img alt="Logo" src="{{ asset('apeksi.png') }}"
+                                            class="logo-default h-45px h-lg-70px" />
                                     </div>
                                     <div class="d-flex">
                                         <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
                                             class="logo-sticky h-40px h-lg-60px" />
                                         <img alt="Logo" src="{{ asset('logo_kemenkraf.png') }}"
+                                            class="logo-sticky h-40px h-lg-60px" />
+                                        <img alt="Logo" src="{{ asset('apeksi.png') }}"
                                             class="logo-sticky h-40px h-lg-60px" />
                                     </div>
                                 </a>

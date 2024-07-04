@@ -45,12 +45,17 @@
                         style="height: 100vh" alt="">
                     <div class="position-absolute bottom-0 end-0"
                         style="background-color: #fff; border-top-left-radius: 30px">
-                        <img src="{{ asset('logo_muda..png') }}" class="w-35px w-md-80px" alt="">
-                        <img src="{{ asset('Logo_duta_pemuda_makassar.png') }}" class="w-35px w-md-65px" alt="">
+                        <img src="{{ asset('logo_f8.png') }}" class="w-35px w-md-80px" alt="">
+                        <img src="{{ asset('ycc.png') }}" class="w-35px w-md-80px" alt="">
+                        <img src="{{ asset('Logo_dispora.png') }}" class="w-35px w-md-80px" alt="">
                         <img src="{{ asset('logo_explore.png') }}" class="w-50px w-md-125px" alt="">
+                        <img src="{{ asset('logo_muda..png') }}" class="w-35px w-md-80px" alt="">
                         <img src="{{ asset('binar.png') }}" class="w-35px w-md-60px" alt="">
                         <img src="{{ asset('pemimpin.png') }}" class="w-35px w-md-80px" alt="">
-                        <img src="{{ asset('logo_f8.png') }}" class="w-35px w-md-80px" alt="">
+                        <img src="{{ asset('youth.png') }}" class="w-35px w-md-80px" alt="">
+                        <img src="{{ asset('Logo_duta_pemuda_makassar.png') }}" class="w-35px w-md-65px"
+                            alt="">
+                        <img src="{{ asset('sre.png') }}" class="w-35px w-md-80px" alt="">
                     </div>
                 </div>
                 <!--begin::Header-->
@@ -87,11 +92,15 @@
                                             class="logo-default h-45px h-lg-65px" />
                                         <img alt="Logo" src="{{ asset('logo_kemenkraf.png') }}"
                                             class="logo-default h-45px h-lg-65px" />
+                                        <img alt="Logo" src="{{ asset('apeksi.png') }}"
+                                            class="logo-default h-45px h-lg-70px" />
                                     </div>
                                     <div class="d-flex">
                                         <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
                                             class="logo-sticky h-40px h-lg-60px" />
                                         <img alt="Logo" src="{{ asset('logo_kemenkraf.png') }}"
+                                            class="logo-sticky h-40px h-lg-60px" />
+                                        <img alt="Logo" src="{{ asset('apeksi.png') }}"
                                             class="logo-sticky h-40px h-lg-60px" />
                                     </div>
                                 </a>

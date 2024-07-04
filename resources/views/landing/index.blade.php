@@ -46,13 +46,17 @@
                         style="height: 100vh" alt="">
                     <div class="position-absolute bottom-0 end-0"
                         style="background-color: #fff; border-top-left-radius: 30px">
-                        <img src="{{ asset('logo_muda..png') }}" class="w-35px w-md-80px" alt="">
-                        <img src="{{ asset('Logo_duta_pemuda_makassar.png') }}" class="w-35px w-md-65px"
-                            alt="">
+                        <img src="{{ asset('logo_f8.png') }}" class="w-35px w-md-80px" alt="">
+                        <img src="{{ asset('ycc.png') }}" class="w-35px w-md-80px" alt="">
+                        <img src="{{ asset('Logo_dispora.png') }}" class="w-35px w-md-80px" alt="">
                         <img src="{{ asset('logo_explore.png') }}" class="w-50px w-md-125px" alt="">
+                        <img src="{{ asset('logo_muda..png') }}" class="w-35px w-md-80px" alt="">
                         <img src="{{ asset('binar.png') }}" class="w-35px w-md-60px" alt="">
                         <img src="{{ asset('pemimpin.png') }}" class="w-35px w-md-80px" alt="">
-                        <img src="{{ asset('logo_f8.png') }}" class="w-35px w-md-80px" alt="">
+                        <img src="{{ asset('youth.png') }}" class="w-35px w-md-80px" alt="">
+                        <img src="{{ asset('Logo_duta_pemuda_makassar.png') }}" class="w-35px w-md-65px"
+                            alt="">
+                        <img src="{{ asset('sre.png') }}" class="w-35px w-md-80px" alt="">
                     </div>
                 </div>
                 <!--begin::Header-->
@@ -89,11 +93,15 @@
                                             class="logo-default h-45px h-lg-65px" />
                                         <img alt="Logo" src="{{ asset('logo_kemenkraf.png') }}"
                                             class="logo-default h-45px h-lg-65px" />
+                                        <img alt="Logo" src="{{ asset('apeksi.png') }}"
+                                            class="logo-default h-45px h-lg-70px" />
                                     </div>
                                     <div class="d-flex">
                                         <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}"
                                             class="logo-sticky h-40px h-lg-60px" />
                                         <img alt="Logo" src="{{ asset('logo_kemenkraf.png') }}"
+                                            class="logo-sticky h-40px h-lg-60px" />
+                                        <img alt="Logo" src="{{ asset('apeksi.png') }}"
                                             class="logo-sticky h-40px h-lg-60px" />
                                     </div>
                                 </a>
@@ -581,21 +589,7 @@
                                 <div class="text-dark text-center fw-semibold fs-6">Online
                                     Technical
                                     Meeting <br>
-                                    <span class="text-danger fw-bolder">19 Juli 2024</span>
-                                </div>
-                                <!--end::Label-->
-                                <div>
-                                    <img src="{{ asset('arrow.png') }}" style="margin-right: -35px" alt="">
-                                </div>
-                            </div>
-                            <!--end::Item-->
-                            <!--begin::Item-->
-                            <div
-                                class="col-md-2 d-flex align-items-center justify-content-center bg-white rounded-2 shadow-lg p-3 h-100px">
-                                <!--begin::Label-->
-                                <div class="text-dark text-center fw-semibold fs-6" style="width: 130px">webinar
-                                    (pre-summit)<br>
-                                    <span class="text-danger fw-bolder">21 Juli 2024</span>
+                                    <span class="text-danger fw-bolder">17 Juli 2024</span>
                                 </div>
                                 <!--end::Label-->
                                 <div>
@@ -865,26 +859,8 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Bilateral
-                                                        Forum</span>
-                                                </div>
-                                                <!--end::Item-->
-                                                <!--begin::Item-->
-                                                <div class="d-flex gap-4 mb-5">
-                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-                                                    <span class="svg-icon svg-icon-1 svg-icon-danger">
-                                                        <svg width="24" height="24" viewBox="0 0 24 24"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <rect opacity="0.3" x="2" y="2" width="20"
-                                                                height="20" rx="10" fill="currentColor" />
-                                                            <path
-                                                                d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z"
-                                                                fill="currentColor" />
-                                                        </svg>
-                                                    </span>
-                                                    <!--end::Svg Icon-->
                                                     <span class="fw-semibold fs-6 opacity-75 text-start pe-3">Social
-                                                        Night Festival</span>
+                                                        Night</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
@@ -1220,12 +1196,27 @@
                     <div class="d-flex justify-content-center gap-10">
                         <!--begin::Logo-->
                         <a href="">
+                            <img alt="Logo" src="{{ asset('pemkot.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('logo_f8.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
                             <img alt="Logo" src="{{ asset('logo_kemenpora.png') }}" class="h-60px h-md-90px" />
                         </a>
                         <!--end::Logo image-->
                         <!--begin::Logo-->
                         <a href="">
-                            <img alt="Logo" src="{{ asset('pemkot.png') }}" class="h-60px h-md-90px" />
+                            <img alt="Logo" src="{{ asset('logo_kemenkraf.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('apeksi.png') }}" class="h-60px h-md-90px" />
                         </a>
                         <!--end::Logo image-->
                     </div>
@@ -1246,7 +1237,7 @@
                         <!--end::Logo image-->
                         <!--begin::Logo-->
                         <a href="">
-                            <img alt="Logo" src="{{ asset('logo_muda..png') }}" class="h-60px h-md-90px" />
+                            <img alt="Logo" src="{{ asset('logo_explore.png') }}" class="h-60px h-md-90px" />
                         </a>
                         <!--end::Logo image-->
                     </div>
@@ -1262,8 +1253,7 @@
                     <div class="d-flex justify-content-center gap-10">
                         <!--begin::Logo-->
                         <a href="">
-                            <img alt="Logo" src="{{ asset('Logo_duta_pemuda_makassar.png') }}"
-                                class="h-60px h-md-95px" />
+                            <img alt="Logo" src="{{ asset('logo_muda..png') }}" class="h-60px h-md-90px" />
                         </a>
                         <!--end::Logo image-->
                         <!--begin::Logo-->
@@ -1274,6 +1264,27 @@
                         <!--begin::Logo-->
                         <a href="">
                             <img alt="Logo" src="{{ asset('pemimpin.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('ycc.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('youth.png') }}" class="h-60px h-md-90px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('Logo_duta_pemuda_makassar.png') }}"
+                                class="h-60px h-md-95px" />
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo-->
+                        <a href="">
+                            <img alt="Logo" src="{{ asset('sre.png') }}" class="h-60px h-md-90px" />
                         </a>
                         <!--end::Logo image-->
                     </div>
