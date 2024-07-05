@@ -291,7 +291,7 @@
                                                         style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
                                                         bentuk file pdf)</span></label>
                                                 <input class="form-control" accept=".pdf" type="file"
-                                                    name="file_ktp" id="file_ktp">
+                                                    name="file_ktp" id="file_ktp" required>
                                                 <small class="text-danger file_ktp_error"></small>
                                             </div>
 
@@ -300,7 +300,7 @@
                                                         style="font-size: 10px; color: #EA443E; font-style: italic">(Dalam
                                                         bentuk file pdf)</span></label>
                                                 <input class="form-control" accept=".pdf" type="file"
-                                                    name="file_cv" id="file_cv">
+                                                    name="file_cv" id="file_cv" required>
                                                 <small class="text-danger file_cv_error"></small>
                                             </div>
 
@@ -308,7 +308,7 @@
                                                 <label for="file_ppt" class="form-label">Desk
                                                     (PowerPoint)</label>
                                                 <input class="form-control" accept=".pptx, .ppt" type="file"
-                                                    name="file_ppt" id="file_ppt">
+                                                    name="file_ppt" id="file_ppt" required>
                                                 <small class="text-danger file_ppt_error"></small>
                                             </div>
 
