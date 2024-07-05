@@ -39,6 +39,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 
         Route::get('/data-pendaftar', 'Pendaftar@index')->name('data-pendaftar');
         Route::get('/get-data-pendaftar', 'Pendaftar@get')->name('get-data-pendaftar');
+
+        Route::get('/export-excel', 'Pendaftar@export_excel')->name('export-excel');
     });
 
     Route::get('/logout', 'Auth@logout')->name('logout');
