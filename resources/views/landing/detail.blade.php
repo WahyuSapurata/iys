@@ -134,10 +134,10 @@
                                         </div>
                                         <!--end::Menu item-->
                                         <!--begin::Toolbar-->
-                                        <div class="flex-equal ms-md-15">
+                                        {{-- <div class="flex-equal ms-md-15">
                                             <button class="btn btn-danger" data-bs-toggle="modal"
                                                 data-bs-target="#kt_modal_1">Daftar</button>
-                                        </div>
+                                        </div> --}}
 
                                         <div class="d-grid d-md-flex ms-md-10" style="align-items: center; gap: 10px">
                                             <img src="{{ asset('pemkot.png') }}" class="h-60px" alt="">
