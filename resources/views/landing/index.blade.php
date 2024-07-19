@@ -1327,11 +1327,6 @@
                         <!--end::Description-->
                     </div>
                     <!--end::Content-->
-                    <!--begin::Link-->
-                    <button data-bs-toggle="modal" data-bs-target="#kt_modal_1"
-                        class="btn btn-lg btn-danger border-2 flex-shrink-0 my-2">
-                        Daftar</button>
-                    <!--end::Link-->
                 </div>
                 <!--end::Highlight-->
             </div>
