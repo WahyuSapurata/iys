@@ -1250,7 +1250,7 @@
                     <h3 class="fs-2hx text-dark mb-10 text-uppercase" id="clients"
                         data-kt-scroll-offset="{default: 125, lg: 150}">
                         in collaboration with</h3>
-                    <div class="d-flex justify-content-center gap-10">
+                    <div class="d-flex justify-content-center gap-10" style="flex-flow: wrap">
                         <!--begin::Logo-->
                         <a href="">
                             <img alt="Logo" src="{{ asset('logo_muda..png') }}" class="h-60px h-md-90px" />
