@@ -140,8 +140,11 @@
                                         <!--end::Menu item-->
                                         <!--begin::Toolbar-->
                                         <div class="flex-equal ms-md-15">
-                                            <button class="btn btn-danger" data-bs-toggle="modal"
-                                                data-bs-target="#kt_modal_1">Daftar</button>
+                                            {{-- <button class="btn btn-danger" data-bs-toggle="modal"
+                                                data-bs-target="#kt_modal_1">Daftar</button> --}}
+                                                <a href="https://iys.whoops.co.id" target="_blank" class="btn btn-danger">
+                                                    Daftar
+                                                </a>
                                         </div>
 
                                         <div class="d-grid d-md-flex ms-md-10" style="align-items: center; gap: 10px">
