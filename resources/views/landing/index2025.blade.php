@@ -49,7 +49,7 @@
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root" id="kt_app_root">
         <!--begin::Header Section-->
-        <div class="mb-0" id="home">
+        <div class="mb-0" id="home" style="height: 100vh;">
             <!--begin::Wrapper-->
             <div class="position-relative">
                 <div class="position-absolute w-100 z-index-n2">
@@ -57,10 +57,10 @@
                         style="height: 100vh" alt="">
                     <img src="{{ asset('mobile_2025.jpg') }}" class="w-100 backgriund-landing d-block d-md-none"
                         style="height: 100vh" alt="">
-                    <div class="position-absolute bottom-0 w-100 d-flex justify-content-center">
-                        <img src="{{ asset('logo_2025/logo-06.png') }}" class="w-35px w-md-100px" alt="">
-                        <img src="{{ asset('logo_2025/logo-07.png') }}" class="w-35px w-md-80px" alt="">
-                        <img src="{{ asset('logo_2025/logo-08.png') }}" class="w-35px w-md-80px" alt="">
+                    <div class="position-absolute bottom-0 mb-10px mb-md-0px w-100 d-flex justify-content-center">
+                        <img src="{{ asset('logo_2025/logo-06.png') }}" class="w-75px w-md-100px" alt="">
+                        <img src="{{ asset('logo_2025/logo-07.png') }}" class="w-55px w-md-80px" alt="">
+                        <img src="{{ asset('logo_2025/logo-08.png') }}" class="w-55px w-md-80px" alt="">
                     </div>
                 </div>
                 <!--begin::Header-->
@@ -120,7 +120,8 @@
                                     data-kt-drawer-width="200px" data-kt-drawer-direction="start"
                                     data-kt-drawer-toggle="#kt_landing_menu_toggle" data-kt-swapper="true"
                                     data-kt-swapper-mode="prepend"
-                                    data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
+                                    data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}"
+                                    style="background-color: #9e292f !important;">
                                     <!--begin::Menu-->
                                     <div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-semibold"
                                         id="kt_landing_menu" style="align-items: center">
@@ -159,7 +160,8 @@
                                         <a href="https://iys.whoops.co.id" target="_blank"
                                             class="btn btn-danger">Daftar</a>
 
-                                        <div class="d-grid d-md-flex ms-md-10" style="align-items: center; gap: 10px">
+                                        <div class="d-grid d-md-flex ms-md-10"
+                                            style="align-items: center; gap: 10px;  justify-items: center">
                                             <img src="{{ asset('logo_2025/logo-09.png') }}" class="h-60px"
                                                 alt="">
                                             <img src="{{ asset('logo_2025/logo-10.png') }}" class="h-60px"
@@ -190,7 +192,7 @@
         </div>
         <!--end::Header Section-->
         <!--begin::How It Works Section-->
-        <div class="z-index-2 content-deskripsi" style="margin-top: 645px">
+        <div class="mb-n10 mb-lg-n20 z-index-2 content-deskripsi" style="margin-top: 20px !important">
             <!--begin::Container-->
             <div class="container">
                 <!--begin::Heading-->
