@@ -27,8 +27,7 @@ class RegisterController extends BaseController
         }
 
         if ($storeRegisterRequest->file('file_ppt')) {
-            $extension = $storeRegisterRequest->file('file_ppt')->extension();
-            $newPpt = $storeRegisterRequest->nama . '-' . now()->timestamp . 'ppt' . '.' . $extension;
+            $newPpt = $storeRegisterRequest->nama . '-' . now()->timestamp . 'ppt' . '.' . 'ppt';
             $storeRegisterRequest->file('file_ppt')->storeAs('public/register', $newPpt);
         }
 

@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'Dashboard@index')->name('home.index');
 
-    Route::get('/', 'Landing@index')->name('landing');
+    Route::get('/', 'Landing@index_2025')->name('landing2025');
+    Route::get('/landing2024', 'Landing@index')->name('landing2024');
     Route::get('/landing2023', 'Landing@index_2024')->name('landing2023');
     Route::get('/landing-detail/{uuid}', 'Landing@detail')->name('landing-detail');
 

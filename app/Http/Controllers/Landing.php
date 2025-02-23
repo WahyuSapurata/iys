@@ -23,4 +23,10 @@ class Landing extends BaseController
     {
         return view('landing.index2024');
     }
+
+    public function index_2025()
+    {
+        $data_event = Event::all();
+        return view('landing.index2025', compact('data_event'));
+    }
 }
