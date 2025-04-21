@@ -93,7 +93,7 @@ class Pendaftar extends BaseController
                 'horizontal' => Alignment::HORIZONTAL_CENTER,
             ],
         ];
-        $sheet->setCellValue('A1', 'REKAP PENDAFTAR')->mergeCells('A1:P1');
+        $sheet->setCellValue('A1', 'REKAP PENDAFTAR')->mergeCells('A1:R1');
 
         $sheet->setCellValue('A3', 'No');
         $sheet->setCellValue('B3', 'Nama');
@@ -111,10 +111,11 @@ class Pendaftar extends BaseController
         $sheet->setCellValue('N3', 'File KTP');
         $sheet->setCellValue('O3', 'File CV');
         $sheet->setCellValue('P3', 'Link Drive PPT');
-        $sheet->setCellValue('Q3', 'Link Drive Video');
+        $sheet->setCellValue('Q3', 'Status Video');
+        $sheet->setCellValue('R3', 'Link Drive Video');
 
         // Memberikan warna pada sel-sel baris ke-3
-        $sheet->getStyle('A3:P3')->applyFromArray([
+        $sheet->getStyle('A3:R3')->applyFromArray([
             'fill' => [
                 'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
                 'startColor' => [
@@ -156,7 +157,8 @@ class Pendaftar extends BaseController
             }
 
             $sheet->setCellValue('P' . $row, $lap->link_drive_peresentase);
-            $sheet->setCellValue('Q' . $row, $lap->link_drive_video);
+            $sheet->setCellValue('Q' . $row, $lap->status_video);
+            $sheet->setCellValue('R' . $row, $lap->link_drive_video);
 
             $row++;
         }
@@ -213,7 +215,7 @@ class Pendaftar extends BaseController
         ]);
 
         // Memberikan border ke seluruh sel di kolom
-        for ($col = 'A'; $col <= 'P'; $col++) {
+        for ($col = 'A'; $col <= 'R'; $col++) {
             $sheet->getStyle($col . '3:' . $col . ($row - 1))->applyFromArray([
                 'borders' => [
                     'allBorders' => [

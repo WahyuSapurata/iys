@@ -54,6 +54,7 @@
                                             <th>File KTP</th>
                                             <th>File CV</th>
                                             <th>Link Drive Video Persentase</th>
+                                            <th>Status Video</th>
                                             <th>Link Drive Video Bakat</th>
                                             {{-- <th>Aksi</th> --}}
                                         </tr>
@@ -275,6 +276,9 @@
                         }
                     }, {
                         data: 'link_drive_peresentase',
+                        className: 'text-center',
+                    }, {
+                        data: 'status_video',
                         className: 'text-center',
                     }, {
                         data: 'link_drive_video',

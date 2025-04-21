@@ -29,6 +29,7 @@ class Register extends Model
         'file_ktp',
         'file_cv',
         'link_drive_peresentase',
+        'status_video',
         'link_drive_video',
     ];
 
