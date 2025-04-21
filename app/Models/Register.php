@@ -28,7 +28,8 @@ class Register extends Model
         'ukuran',
         'file_ktp',
         'file_cv',
-        'file_ppt',
+        'link_drive_peresentase',
+        'link_drive_video',
     ];
 
     protected static function boot()

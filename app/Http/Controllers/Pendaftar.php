@@ -40,7 +40,6 @@ class Pendaftar extends BaseController
 
         $newKtp = '';
         $newCv = '';
-        $newPpt = '';
         if ($storeRegisterRequest->file('file_ktp')) {
             $extension = $storeRegisterRequest->file('file_ktp')->extension();
             $newKtp = $storeRegisterRequest->nama . '-' . now()->timestamp . 'ktp' . '.' . $extension;
@@ -53,23 +52,18 @@ class Pendaftar extends BaseController
             $storeRegisterRequest->file('file_cv')->storeAs('register', $newCv);
         }
 
-        if ($storeRegisterRequest->file('file_ppt')) {
-            $newPpt = $storeRegisterRequest->nama . '-' . now()->timestamp . 'ppt' . '.' . 'ppt';
-            $storeRegisterRequest->file('file_ppt')->storeAs('register', $newPpt);
-        }
-
 
         $data = $storeRegisterRequest->all();
         $data['file_ktp'] = $newKtp;
         $data['file_cv'] = $newCv;
-        $data['file_ppt'] = $newPpt;
         $register = Register::create($data);
 
         if ($register) {
             Session::flash('status', 'success');
             Session::flash('message', 'Data berhasil dikirim!');
         }
-        return redirect()->route('landing');
+        return redirect()->back();
+        // return redirect()->to('https://iys.dispora.makassarkota.go.id');
     }
 
     public function export_excel()
@@ -116,7 +110,8 @@ class Pendaftar extends BaseController
         $sheet->setCellValue('M3', '⁠Ukuran T-Shirt (S-M-L-XL)');
         $sheet->setCellValue('N3', 'File KTP');
         $sheet->setCellValue('O3', 'File CV');
-        $sheet->setCellValue('P3', 'File PPT');
+        $sheet->setCellValue('P3', 'Link Drive PPT');
+        $sheet->setCellValue('Q3', 'Link Drive Video');
 
         // Memberikan warna pada sel-sel baris ke-3
         $sheet->getStyle('A3:P3')->applyFromArray([
@@ -160,12 +155,8 @@ class Pendaftar extends BaseController
                 $sheet->setCellValue('O' . $row, '');
             }
 
-            if (!empty($lap->file_ppt)) {
-                $sheet->setCellValue('P' . $row, 'Lihat PPT');
-                $sheet->getCell('P' . $row)->getHyperlink()->setUrl(url('register/' . $lap->file_ppt));
-            } else {
-                $sheet->setCellValue('P' . $row, '');
-            }
+            $sheet->setCellValue('P' . $row, $lap->link_drive_peresentase);
+            $sheet->setCellValue('Q' . $row, $lap->link_drive_video);
 
             $row++;
         }
