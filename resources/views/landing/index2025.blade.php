@@ -344,20 +344,22 @@
                                                 <small class="text-danger link_drive_peresentase_error"></small>
                                             </div>
 
-                                            <div class="mb-10">
-                                                <label class="form-label d-block">Status Video</label>
-
+                                            <div class="mb-10 d-grid gap-2">
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio"
                                                         name="status_video" id="statusVideoTrue" value="1">
-                                                    <label class="form-check-label" for="statusVideoTrue">Ya</label>
+                                                    <label class="form-check-label" for="statusVideoTrue">General
+                                                        Participant (Ceremonial Conference IYS) <span
+                                                            style="font-size: 10px; color: #EA443E; font-style: italic">(*Tidak
+                                                            wajib upload video)</span></label>
                                                 </div>
-
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio"
                                                         name="status_video" id="statusVideoFalse" value="0">
-                                                    <label class="form-check-label"
-                                                        for="statusVideoFalse">Tidak</label>
+                                                    <label class="form-check-label" for="statusVideoFalse">⁠Official
+                                                        Delegate IYS <span
+                                                            style="font-size: 10px; color: #EA443E; font-style: italic">(*Wajib
+                                                            upload video)</span></label>
                                                 </div>
 
                                                 <small class="text-danger status_video_error"></small>
