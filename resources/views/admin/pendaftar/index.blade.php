@@ -53,7 +53,6 @@
                                             <th>⁠Ukuran T-Shirt (S-M-L-XL)</th>
                                             <th>File KTP</th>
                                             <th>File CV</th>
-                                            <th>Link Drive Video Persentase</th>
                                             <th>Status Video</th>
                                             <th>Link Drive Video Bakat</th>
                                             {{-- <th>Aksi</th> --}}
@@ -274,9 +273,6 @@
                                 </a>`;
                             return result;
                         }
-                    }, {
-                        data: 'link_drive_peresentase',
-                        className: 'text-center',
                     }, {
                         data: 'status_video',
                         className: 'text-center',

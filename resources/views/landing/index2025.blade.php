@@ -330,20 +330,6 @@
                                                 <small class="text-danger file_cv_error"></small>
                                             </div>
 
-                                            <div class="mb-10">
-                                                <label class="form-label">Link Drive Video Presentase</label>
-                                                <input class="form-control" type="text"
-                                                    name="link_drive_peresentase" id="link_drive_peresentase">
-                                                <small class="text-danger link_drive_peresentase_error"></small>
-                                            </div>
-
-                                            <div class="mb-10">
-                                                <label class="form-label">Link Drive Video Presentase</label>
-                                                <input class="form-control" type="text"
-                                                    name="link_drive_peresentase" id="link_drive_peresentase">
-                                                <small class="text-danger link_drive_peresentase_error"></small>
-                                            </div>
-
                                             <div class="mb-10 d-grid gap-2">
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio"
@@ -366,9 +352,9 @@
                                             </div>
 
                                             <div class="mb-10">
-                                                <label class="form-label">Link Drive Video Bakat <span
-                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(Jika
-                                                        ada)</span></label>
+                                                <label class="form-label">Link vidio 1 Menit Untuk Indonesia <span
+                                                        style="font-size: 10px; color: #EA443E; font-style: italic">(khusus
+                                                        pendaftar official delegate)</span></label>
                                                 <input class="form-control" type="text" name="link_drive_video"
                                                     id="link_drive_video">
                                                 <small class="text-danger link_drive_video_error"></small>

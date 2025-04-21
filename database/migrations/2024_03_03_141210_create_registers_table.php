@@ -28,7 +28,6 @@ return new class extends Migration
             $table->string('ukuran');
             $table->string('file_ktp')->nullable();
             $table->string('file_cv')->nullable();
-            $table->string('link_drive_peresentase');
             $table->boolean('status_video')->default(0);
             $table->string('link_drive_video')->nullable();
             $table->timestamps();
